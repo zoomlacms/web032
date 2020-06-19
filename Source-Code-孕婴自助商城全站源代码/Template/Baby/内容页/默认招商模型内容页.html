@@ -1,0 +1,151 @@
+﻿{ZL.Source id="招商模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="招商模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title> 
+<meta name="Keywords" content="{SField sid="招商模型数据源标签" FD="Tagkey" page="0"/}">
+{ZL:Boot()/}
+<link rel="stylesheet" href="{$CssDir/}visuallightbox.css" type="text/css" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script type="text/javascript" src="{$CssDir/}js/jquery.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=891134d8e2d66c2dd6b4b08da9555ca5"></script>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<style>
+#allmap{ width:100%; height:400px;}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="business">
+<div class="container"> 
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding0 business_l">
+<ul class="list-unstyled">
+<li class="logo"><a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a></li>
+<li><a href="/">首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">招商中心</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">网站导航<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+{ZL.Label id="输出根节点下一级栏目列表" ShowNum="10" /}
+</ul>
+</li> 
+</ul>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 top_func_r">
+<ul class="list-unstyled pull-right">
+<li><a href="/User/" target="_blank">登录</a></li>
+<li><span>|</span></li>
+<li><a href="/User/Register.aspx" target="_blank">注册</a></li>
+<li><span>|</span></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的订单<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo">历史订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo&type=4">已完成订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Cartinfo">未完成订单</a></li> 
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的收藏夹<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Content/MyFavori.aspx?type=1">内容收藏</a></li>
+<li><a href="/User/Content/MyFavite_Shop.aspx?type=2">商品收藏</a></li>
+<li><a href="/User/Content/MyFavite_UserShop.aspx?type=3">店家收藏</a></li>  
+</ul>
+</li>
+<li><span>|</span></li>
+<li><a href="#" target="_blank">积分兑换</a></li>
+<li><a href="#" target="_blank">会员俱乐部</a></li>
+<li><a href="#" target="_blank">时尚会</a></li>
+<li><a href="#" target="_blank">客户服务</a></li>
+<li class="mobile hidden-xs"><a href="#" target="_blank"><i class="fa fa-mobile-phone"></i>手机版</a><div class="mobile_box text-center"><strong>扫描"<em>婴童之家</em>"手机版二维码</strong><p>你将获得更多优惠哦!</p><img src="{$CssDir/}images/code.jpg" alt="婴童之家手机版二维码" /></div></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container bus_banner">  
+<img src="/UploadFiles/{SField sid="招商模型数据源标签" FD="qyban" page="0"/}" class="center-block img-responsive" onerror="this.src='{$CssDir/}images/business_banner.jpg'" alt="企业banner图" /> 
+<span>{SField sid="招商模型数据源标签" FD="Title" page="0"/}</span>
+<p><i class="fa fa-phone">：</i><a href="tel:{SField sid="招商模型数据源标签" FD="tel" page="0"/}">{SField sid="招商模型数据源标签" FD="tel" page="0"/}</a></p>
+</div> 
+<div class="container bus_syn"> 
+<div class="bus_title">企业介绍</div>
+<div class="bus_content">
+{SField sid="招商模型数据源标签" FD="content" page="0"/}
+</div> 
+</div>
+<div class="container bus_manage">
+<div class="bus_title">主营项目</div>
+<div class="bus_manage_content">
+{SField sid="招商模型数据源标签" FD="project" page="0"/}
+</div>
+</div>
+<div class="container bus_pics"  id="vlightbox">
+<div class="bus_title">企业相册</div> 
+<div class="bus_pics_content"> 
+<ul class="list-unstyled" id="tab">
+{ZL:SplitPicUrl({SField sid="招商模型数据源标签" FD="images" page="0"/})/}
+</ul>
+<div class="clearfix"></div>
+</div> 
+</div>
+<div class="container">
+<div class="bus_map">
+<div class="bus_title">企业地图</div>
+<div id="allmap"></div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html> 
+<script type="text/javascript">
+var $VisualLightBoxParams$ = {autoPlay:true,borderSize:21,enableSlideshow:true,overlayOpacity:0.4,startZoom:true};
+</script>
+<script>  
+var img=document.getElementById("tab").getElementsByTagName("img");
+ for(var i=0;i<img.length;i++){ 
+     img[i].id="img"+i; 
+	 var imgurl=(img[i].src)
+    var img1=document.getElementById("img"+i); 
+     var a=document.createElement("a"); 
+     //获取当前元素的父元素进行替换 
+    img1.parentNode.replaceChild(a,img1); 
+     a.href=imgurl;  
+	 a.className="vlightbox";
+     a.appendChild(img1);  
+    } 	 
+</script> 
+<script type="text/javascript" src="{$CssDir/}js/visuallightbox.js"></script>
+<script type="text/javascript">
+
+// 百度地图API功能
+var map = new BMap.Map("allmap"); 
+var sign='{SField sid="招商模型数据源标签" FD="sign" page="0"/}';  
+var strs=new Array();
+strs=sign.split(",");
+var mapx=strs[0];
+var mapy=strs[1]; 
+map.centerAndZoom(new BMap.Point(mapx,mapy), 14);//指定地图位置
+ 
+var pt = new BMap.Point(mapx,mapy);//创建个性图标开始
+var myIcon6 = new BMap.Icon("/Template/Baby/style/images/map.png", new BMap.Size(55,55));
+var marker6 = new BMap.Marker(pt,{icon:myIcon6});  // 创建标注
+map.addOverlay(marker6);              // 将标注添加到地图中 
+var infoWindow6 = new BMap.InfoWindow("<img src="+'/UploadFiles/{SField sid="招商模型数据源标签" FD="qylogo" page="0"/}'+" alt="+'{SField sid="招商模型数据源标签" FD="Title" page="0"/}'+" /><br/><strong>"+'{SField sid="招商模型数据源标签" FD="Title" page="0"/}'+"</strong><br/><i class='fa fa-qq'>：</i><a onclick='talk()'>"+'{SField sid="招商模型数据源标签" FD="qq" page="0"/}'+"</a><br/><i class='fa fa-envelope'>：</i><a href='mailto:'+'{SField sid='招商模型数据源标签' FD='Email' page='0'/}'+'>"+'{SField sid="招商模型数据源标签" FD="Email" page="0"/}'+"</a><p>地址："+'{SField sid="招商模型数据源标签" FD="address" page="0"/}'+"</p>");//图标说明
+marker6.openInfoWindow(infoWindow6); 
+marker6.addEventListener("click", function(){this.openInfoWindow(infoWindow6);});
+ 
+map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+//map.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}));  //右上角，仅包含平移和缩放按钮
+map.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT, type: BMAP_NAVIGATION_CONTROL_PAN}));  //左下角，仅包含平移按钮
+map.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, type: BMAP_NAVIGATION_CONTROL_ZOOM}));  //右下角，仅包含缩放按钮
+
+map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用
+map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+
+</script>
+<script>
+function talk(){  
+	window.location.href='http://wpa.qq.com/msgrd?v=3&uin='+'{SField sid="招商模型数据源标签" FD="qq" page="0"/}'+'&site=qq&menu=yes'; 
+	}
+</script>

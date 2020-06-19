@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>818</LabelID>
+    <LabelName>输出商城左侧栏目列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>商城</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName,NodePicUrl</LabelField>
+    <LabelWhere>ParentID=@NodeID</LabelWhere>
+    <LabelOrder>NodeID ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="panel panel-default"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h4 class="panel-title"&gt;&lt;img src="{Field="NodePicUrl"/}" alt="{Field="NodeName"/}" onerror="this.style.display='none'" /&gt;
+&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse{Field="NodeID"/}" aria-expanded="false" aria-controls="collapseThree"&gt;
+{Field="NodeName"/}
+&lt;/a&gt;
+&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="collapse{Field="NodeID"/}" class="panel-collapse collapse" role="tabpanel"&gt;
+&lt;div class="panel-body"&gt;
+&lt;ul class="list-unstyled"&gt;
+{ZL.Label id="输出一级子栏目列表" ParentID="{Field="NodeID"/}" ShowNum="10" /}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>0</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Baby</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

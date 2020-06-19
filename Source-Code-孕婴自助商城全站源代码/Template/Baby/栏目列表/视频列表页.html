@@ -1,0 +1,74 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+</head>
+<body>
+{ZL.Label id="全站头部"/}  
+<div class="container mysite"> 
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+<li>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</li> 
+</ul> 
+</div>
+<!--面包屑导航结束 --> 
+<div class="container videolist">
+<div class="row">
+<div class="padding5">
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 padding10 videolist_l"> 
+<h1 class="text-center" id="aa">{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</h1>
+{ZL.Label id="输出视频列表_分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" TitieNum="30" ShowNum="9" /}  
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 padding10 videolist_r">
+<div class="hot_video">
+<div class="conlist_r_title"><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(14)/}" target="_blank">更多</a></span><span class="pull-left">视频推荐</span></div>
+<ul class="list-unstyled">
+{ZL.Label id="输出推荐视频列表_带简介" NodeID="14" TitieNum="30" ShowNum="5" Syn="70" /}
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div> 
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+ 
+$(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+    $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+    $(this).find(".sort_list").fadeOut();
+});; 
+ 
+</script>

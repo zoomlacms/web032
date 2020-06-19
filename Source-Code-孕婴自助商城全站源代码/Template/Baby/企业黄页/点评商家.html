@@ -1,0 +1,122 @@
+{ZL.Source id="标准黄页申请信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="标准黄页申请信息数据源" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="标准黄页申请信息数据源" FD="Keyword" page="0"/}" />
+<meta name="description" content="{SField sid="标准黄页申请信息数据源" FD="Meta_Description" page="0"/}" />  
+{ZL:Boot()/} 
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<style> 
+.page_nav_r .page_node{$GetRequest(NodeID)$} a{ background:#8015B7; text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="page_top">
+<div class="container">
+<ul class="list-unstyled">
+<li><a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a></li>
+<li><a href="/">网站首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">招商中心</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">网站导航<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="{ZL:GetNodeLinkUrl(6)/}">新品推荐</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">商家地带</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}">童装资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(9)/}">开店指导</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(17)/}">人才招聘</a></li>
+<li><a href="/index">圈子</a></li> 
+</ul>
+</li>
+<li><img src="{$CssDir/}images/page_top.png" alt="火热招商中..."></li>
+</ul>
+</div>
+</div>
+<div class="container page_banner">   
+<img src="{$CssDir/}images/page_banner.jpg" class="center-block" alt="企业banner" />   
+<div id="page_logo"><a href="/Page/Default.aspx?pageid={$GetRequest(pageid)$}">{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}</a>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><p>{SField sid="标准黄页申请信息数据源" FD="syn" page="0"/}</p></div></div>
+<span></span>
+</div>   
+<div class="container"> 
+<div class="page_nav">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 page_nav_l"> 
+<a href="/page/default.aspx?pageid={$GetRequest(pageid)$}"><img src="/{SField sid="标准黄页申请信息数据源" FD="LOGO" page="0"/}" class="center-block img-responsive" alt="{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}"></a> 
+</div> 
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 col-lg-offset-3 page_nav_r">  
+<ul class="list-unstyled"> 
+<li class="page_home"><a href="/page/default.aspx?pageid={$GetRequest(pageid)$}">企业首页</a></li> 
+<li class="page_node1"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=1">企业新闻</a></li> 
+<li class="page_node2"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=2">产品中心</a></li>
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=3">企业风采</a></li>  
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=5">关于我们</a></li> 
+<li class="page_node4"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=4">客户留言</a></li> 
+</ul> 
+</div> 
+<div class="clearfix"></div>
+</div> 
+</div>  
+<div class="container">
+<div class="page_message"> 
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 page_message_l">
+<form name="form7" method="post" action="/PubAction.aspx"> 
+<div class="page_message_box">
+<p><strong class="font_red">温馨提示：</strong>请尽量完善您的信息，以便我们的工作人员能够更快的与您取得联系</p>
+<ul class="list-unstyled">
+<li class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">留言用户：</li>
+<li class="col-lg-6 col-md-6 col-sm-7 col-xs-12"><input name="PubTitle" type="text" id="PubTitle" class="form-control" /></li>
+<li class="col-lg-4 col-md-2 col-sm-12 col-xs-12"><input type="hidden" name="PubID" id="PubID" value="7"><input type="hidden" name="PubContentid" id="PubContentid" value="{$GetRequest(pageid)$}"><input type="hidden" name="PubInputer" id="PubInputer" value="{PubInputer/}"></li>
+<div class="clearfix"></div>
+</ul> 
+<ul class="list-unstyled">
+<li class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">意向产品：</li>
+<li class="col-lg-6 col-md-6 col-sm-7 col-xs-12"><input name="product" type="text" id="product" class="form-control" /></li>
+<div class="clearfix"></div>
+</ul>
+<ul class="list-unstyled">
+<li class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">代理区域：</li>
+<li class="col-lg-6 col-md-6 col-sm-7 col-xs-12"><input name="area" type="text" id="area" class="form-control" /></li>
+<div class="clearfix"></div>
+</ul>
+<ul class="list-unstyled">
+<li class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">联系电话：</li>
+<li class="col-lg-6 col-md-6 col-sm-7 col-xs-12"><input name="tel" type="text" id="tel" class="form-control" /></li>
+<div class="clearfix"></div>
+</ul>
+<ul class="list-unstyled">
+<li class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">联系地址：</li>
+<li class="col-lg-6 col-md-6 col-sm-7 col-xs-12"><input name="address" type="text" id="address" class="form-control" /></li>
+<div class="clearfix"></div>
+</ul>
+<ul class="list-unstyled">
+<li class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">详细内容：</li>
+<li class="col-lg-6 col-md-6 col-sm-7 col-xs-12"><textarea name="PubContent" id="PubContent" class="form-control" rows="6"></textarea></li>
+<div class="clearfix"></div>
+</ul>
+<ul class="list-unstyled">
+<li class="col-lg-4 col-md-4 col-sm-5 col-xs-12"></li>
+<li class="col-lg-6 col-md-6 col-sm-7 col-xs-12 text-center"><input type="submit" name="button" id="button" class="btn btn-warning" value="提 交"></li>
+<div class="clearfix"></div> 
+</ul>
+</div>  
+</form>
+</div> 
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 page_message_r page_class_r"> 
+ {ZL.Label id="抽取指定会员头像" UserID="{SField sid="标准黄页申请信息数据源" FD="UserID" page="0"/}" /}
+<ul class="list-unstyled"> 
+<li><span><i class="fa fa-user"></i>联系人：</span>{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}</li>
+<li><span><i class="fa fa-phone"></i> 电 话：</span><a href="tel:{SField sid="标准黄页申请信息数据源" FD="tel" page="0"/}">{SField sid="标准黄页申请信息数据源" FD="tel" page="0"/}</a></li>
+<li><span><i class="fa fa-qq"></i> Q Q：</span>{SField sid="标准黄页申请信息数据源" FD="qq" page="0"/}</li>
+<li><span><i class="fa fa-envelope"></i>E-mail：</span><a href="mailto:{SField sid="标准黄页申请信息数据源" FD="email" page="0"/}">{SField sid="标准黄页申请信息数据源" FD="email" page="0"/}</a></li>
+<li><span><i class="fa fa-map-marker"></i> 地 址：</span>{SField sid="标准黄页申请信息数据源" FD="address" page="0"/}</li>
+</ul>
+</div>
+<div class="clearfix"></div> 
+</div>  
+</div> 
+{ZL.Label id="全站底部"/}
+</body>
+</html>

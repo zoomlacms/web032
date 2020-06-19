@@ -1,0 +1,126 @@
+{ZL.Source id="节点栏目信息数据源"/}{ZL.Source id="店铺模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{SField sid="店铺模型数据源标签" FD="StoreName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="business">
+<div class="container"> 
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding0 business_l">
+<ul class="list-unstyled">
+<li class="logo"><a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a></li>
+<li><a href="/">首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">招商中心</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">网站导航<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+{ZL.Label id="输出根节点下一级栏目列表" ShowNum="10" /}
+</ul>
+</li> 
+</ul>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 top_func_r">
+<ul class="list-unstyled pull-right">
+{ZL.Label id="会员登录状态"/}
+<li><span>|</span></li>
+<li><a href="/User/Register.aspx">注册</a></li>
+<li><span>|</span></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的订单<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo">历史订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo&type=4">已完成订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Cartinfo">未完成订单</a></li> 
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的收藏夹<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Content/MyFavori.aspx?type=1">内容收藏</a></li>
+<li><a href="/User/Content/MyFavite_Shop.aspx?type=2">商品收藏</a></li>
+<li><a href="/User/Content/MyFavite_UserShop.aspx?type=3">店家收藏</a></li>  
+</ul>
+</li>
+<li><span>|</span></li>
+<li><a href="#" target="_blank">积分兑换</a></li>
+<li><a href="#" target="_blank">会员俱乐部</a></li>
+<li><a href="#" target="_blank">时尚会</a></li>
+<li><a href="#" target="_blank">客户服务</a></li>
+<li class="mobile hidden-xs"><a href="#" target="_blank"><i class="fa fa-mobile-phone"></i>手机版</a><div class="mobile_box text-center"><strong>扫描"<em>婴童之家</em>"手机版二维码</strong><p>你将获得更多优惠哦!</p><img src="{$CssDir/}images/code.jpg" alt="婴童之家手机版二维码" /></div></li>
+</ul>
+</div>
+</div>
+</nav>
+<div style="height:50px;"></div>
+{ZL.Label id="输出指定店铺信息" StoreID="{$GetRequest(ID)$}" /}
+<div class="container">
+<div class="mysite">
+<ol class="breadcrumb">
+<li><a href="/">网站首页</a></li>
+<li><a href="/Store/StoreIndex.aspx?id={$GetRequest(ID)$}">商家首页</a></li>
+<li class="active">商品列表</li>
+</ol>
+</div>
+</div>
+<div class="container onshop"> 
+<div class="row padding10">
+<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 padding5 onshop_l">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<img src="/Template/Baby/style/images/colth.png" alt="服装" onerror="this.style.display='none'">
+<a href="/Store/Shoplist.aspx?ID={$GetRequest(ID)$}&NodeID=147">服装</a>
+</h4>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<img src="/Template/Baby/style/images/milk.png" alt="母婴用品" onerror="this.style.display='none'">
+<a href="/Store/Shoplist.aspx?ID={$GetRequest(ID)$}&NodeID=148">母婴用品</a>
+</h4>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<img src="/Template/Baby/style/images/toys.png" alt="玩具" onerror="this.style.display='none'">
+<a href="/Store/Shoplist.aspx?ID={$GetRequest(ID)$}&NodeID=149">玩具</a>
+</h4>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<img src="/Template/Baby/style/images/milk.png" alt="喂养用品" onerror="this.style.display='none'">
+<a href="/Store/Shoplist.aspx?ID={$GetRequest(ID)$}&NodeID=150">营养品</a>
+</h4>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<img src="/Template/Baby/style/images/food.png" alt="辅食" onerror="this.style.display='none'">
+<a href="/Store/Shoplist.aspx?ID={$GetRequest(ID)$}&NodeID=151">辅食</a>
+</h4>
+</div>
+</div>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 padding5 onshop_r">
+<h1>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</h1> 
+<div class="onshop_list">  
+{ZL.Label id="店铺商品标签_分页V3" NodeID="{SField sid="节点栏目信息数据源" FD="Nodeid" page="0"/}" TitleNum="60" ShowNum="16" StoreID="{$GetRequest(ID)$}" /}
+</div> 
+</div> 
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>

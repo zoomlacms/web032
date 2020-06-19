@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>30</ModelID>
+    <ModelName>新闻模型</ModelName>
+    <Description />
+    <TableName>ZL_Page_xwmx</TableName>
+    <ItemName>信息</ItemName>
+    <ItemUnit>篇</ItemUnit>
+    <ItemIcon>glyphicon glyphicon-bookmark</ItemIcon>
+    <ModelType>4</ModelType>
+    <ContentModule>内容页/默认新闻模型内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>true</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail>0</Thumbnail>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

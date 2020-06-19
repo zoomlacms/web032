@@ -1,0 +1,70 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<style type="text/css">
+.navbar-default .navbar-nav>#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}>a, .navbar-default .navbar-nav>#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}>a:hover, .navbar-default .navbar-nav>#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}>a:focus { color: #555; background-color: #e7e7e7 }
+</style>
+</head>
+<body id="header" >
+{ZL.Label id="全站头部"/} 
+<div class="container mysite"> 
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="30" /} 
+</ul>
+</div>   
+<div class="container onshop"> 
+<div class="row padding10">
+<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 padding5 onshop_l">
+{ZL.Label id="输出商城左侧栏目列表" NodeID="6" /}
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 padding5 onshop_r">
+<h1>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</h1> 
+<div class="onshop_list">  
+{ZL.Label id="商城商品标签_分页V3" NodeID="{SField sid="节点栏目信息数据源" FD="Nodeid" page="0"/}" TitleNum="60" ShowNum="16"/}
+</div> 
+</div> 
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+ 
+$(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+    $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+    $(this).find(".sort_list").fadeOut();
+});; 
+ 
+</script>

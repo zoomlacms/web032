@@ -1,0 +1,201 @@
+﻿{ZL.Source id="产品模型数据源标签"/}
+{ZL.Source id="标准黄页申请信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="产品模型数据源标签" FD="Title" page="0"/}</title> 
+<meta name="Keywords" content="{SField sid="产品模型数据源标签" FD="Tagkey" page="0"/}">
+{ZL:Boot()/} 
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<style> 
+.page_nav_r .page_node{SField sid="产品模型数据源标签" FD="NodeID" page="0"/} a{ background:#8015B7; text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="page_top">
+<div class="container">
+<ul class="list-unstyled">
+<li><a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a></li>
+<li><a href="/">网站首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">招商中心</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">网站导航<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="{ZL:GetNodeLinkUrl(6)/}">新品推荐</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">商家地带</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}">童装资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(9)/}">开店指导</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(17)/}">人才招聘</a></li>
+<li><a href="/index">圈子</a></li> 
+</ul>
+</li>
+<li><img src="{$CssDir/}images/page_top.png" alt="火热招商中..."></li>
+</ul>
+</div>
+</div>
+<div class="container page_banner">   
+<img src="{$CssDir/}images/page_banner.jpg" class="center-block" alt="企业banner" />   
+<div id="page_logo"><a href="/Page/Default.aspx?pageid={$GetRequest(pageid)$}">{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}</a>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><p>{SField sid="标准黄页申请信息数据源" FD="syn" page="0"/}</p></div></div>
+<span></span>
+</div>   
+<div class="container"> 
+<div class="page_nav">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 page_nav_l"> 
+<a href="/page/default.aspx?pageid={$GetRequest(pageid)$}"><img src="/{SField sid="标准黄页申请信息数据源" FD="LOGO" page="0"/}" class="center-block img-responsive" alt="{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}"></a> 
+</div> 
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 col-lg-offset-3 page_nav_r">  
+<ul class="list-unstyled"> 
+<li class="page_home"><a href="/page/default.aspx?pageid={$GetRequest(pageid)$}">企业首页</a></li> 
+<li class="page_node1"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=1">企业新闻</a></li> 
+<li class="page_node2"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=2">产品中心</a></li>
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=3">企业风采</a></li>  
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=5">关于我们</a></li> 
+<li class="page_node4"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=4">客户留言</a></li> 
+</ul> 
+</div> 
+<div class="clearfix"></div>
+</div> 
+</div>  
+<div class="container">
+<div class="page_procontent">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 page_procontent_l">
+<h1 class="text-center">{SField sid="产品模型数据源标签" FD="Title" page="0"/}</h1>
+<div class="detail_context_pic">
+<div class="detail_context_pic_top">
+<a href="#"><img src="" alt="" id="pic1" curindex="0" /></a> <a id="preArrow" href="javascript:void(0)" class="contextDiv" title="上一张"><span id="preArrow_A"><i class="fa fa-angle-left"></i></span></a> <a id="nextArrow" href="javascript:void(0)" class="contextDiv" title="上一张"><span id="nextArrow_A"><i class="fa fa-angle-right"></i></span></a> 
+<div id="miaoshuwarp">
+<div class="miaoshu"></div>
+</div>
+</div>
+<div class="detail_context_pic_bot">
+<div class="detail_picbot_mid row" id="detail_picbot_mid">
+<ul class="list-unstyled padding10"></ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="page_procontent_body">
+{SField sid="产品模型数据源标签" FD="content" page="0"/}
+</div>
+</div>   
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 page_procontent_r page_class_r">
+{ZL.Label id="抽取指定会员头像" UserID="{SField sid="标准黄页申请信息数据源" FD="UserID" page="0"/}" /}
+<ul class="list-unstyled"> 
+<li><span><i class="fa fa-user"></i>联系人：</span>{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}</li>
+<li><span><i class="fa fa-phone"></i> 电 话：</span><a href="tel:{SField sid="标准黄页申请信息数据源" FD="tel" page="0"/}">{SField sid="标准黄页申请信息数据源" FD="tel" page="0"/}</a></li>
+<li><span><i class="fa fa-qq"></i> Q Q：</span>{SField sid="标准黄页申请信息数据源" FD="qq" page="0"/}</li>
+<li><span><i class="fa fa-envelope"></i>E-mail：</span><a href="mailto:{SField sid="标准黄页申请信息数据源" FD="email" page="0"/}">{SField sid="标准黄页申请信息数据源" FD="email" page="0"/}</a></li>
+<li><span><i class="fa fa-map-marker"></i> 地 址：</span>{SField sid="标准黄页申请信息数据源" FD="address" page="0"/}</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+{ZL.Label id="全站底部"/} 
+</body>
+</html>
+<script>
+var siteurl="{$UploadDir/}";
+var firstpho="";
+var photos='{SField sid="产品模型数据源标签" FD="pics"/}';
+var pho=photos.split("$");
+var arrUrlName=new Array();
+var arrUrl=new Array();
+var str="";
+var str1="";
+for(i=0;i<pho.length;i++)
+{
+	
+	arrUrlName[i]=pho[i].split("|")[0];
+	if(pho[i].split("|")[1].indexOf("http://")==-1)
+	{
+		arrUrl[i]=siteurl+pho[i].split("|")[1];
+	}
+	else
+	{
+		arrUrl[i]=pho[i].split("|")[1];
+	}
+	str+="<li class=\"col-lg-1 col-md-2 col-sm-2 col-xs-3 padding5\"><a href=\"javascript:void(0);\"><img src=\""+arrUrl[i]+"\" alt=\""+arrUrlName[i]+"\" bigimg=\""+arrUrl[i]+"\" text=\""+arrUrlName[i]+"\" /></a></li>";
+}
+$("#detail_picbot_mid ul").html(str);
+$().ready(function(e) {
+$(function() {
+	var firstpic = $(".detail_picbot_mid ul li").first().find("img");
+	var firstsrc = firstpic.attr("bigimg");
+	var firsttxt = firstpic.attr("text");
+	$("#pic1").attr("src", firstsrc);
+	firstpic.addClass("selectpic");
+	$(".miaoshu").text(firsttxt);
+	$("#preArrow").hover(function() {
+		$("#preArrow_A").css("display", "block")
+	}, function() {
+		$("#preArrow_A").css("display", "none")
+	});
+	$("#nextArrow").hover(function() {
+		$("#nextArrow_A").css("display", "block")
+	}, function() {
+		$("#nextArrow_A").css("display", "none")
+	});
+	function preclick() {
+		var currrentindex = parseFloat($("#pic1").attr("curindex"));
+		if (currrentindex != 0) {
+			var curli = $(".detail_picbot_mid ul li").eq(currrentindex);
+			var length = $(".detail_picbot_mid ul li").length;
+			var curnextli = $(".detail_picbot_mid ul li").eq(currrentindex - 1);
+			var curnextsrc = curnextli.find("img").attr("bigimg");
+			var curnexttxt = curnextli.find("img").attr("text");
+			curli.find("img").removeClass("selectpic");
+			curnextli.find("img").addClass("selectpic");
+			$("#pic1").attr("src", curnextsrc);
+			$(".miaoshu").text(curnexttxt);
+			$("#pic1").attr("curindex", currrentindex - 1)
+		} else {
+			$("#firsttop").modal("show");
+		}
+	}
+	$("#preArrow_B").click(function() {
+		preclick()
+	});
+	$("#preArrow").click(function() {
+		preclick()
+	});
+	$("#nextArrow_B").click(function() {
+		nextclick()
+	});
+	$("#nextArrow").click(function() {
+		nextclick()
+	});
+	function nextclick() {
+		var currrentindex = parseFloat($("#pic1").attr("curindex"));
+		var length = $(".detail_picbot_mid ul li").length;
+		if (currrentindex != (length - 1)) {
+			var curli = $(".detail_picbot_mid ul li").eq(currrentindex);
+			var curnextli = $(".detail_picbot_mid ul li").eq(currrentindex + 1);
+			var curnextsrc = curnextli.find("img").attr("bigimg");
+			var curnexttxt = curnextli.find("img").attr("text");
+			curli.find("img").removeClass("selectpic");
+			curnextli.find("img").addClass("selectpic");
+			$("#pic1").attr("src", curnextsrc);
+			$("#pic1").attr("curindex", currrentindex + 1);
+			$(".miaoshu").text(curnexttxt)
+		} else {
+			$("#endtop").modal("show");
+		}
+	}
+	$(".detail_picbot_mid ul li").click(function() {
+		var currentliindex = $(this).index(".detail_picbot_mid ul li");
+		$(".detail_picbot_mid ul li img[class='selectpic']").removeClass("selectpic");
+		var currentli = $(".detail_picbot_mid ul li").eq(currentliindex);
+		currentli.find("img").addClass("selectpic");
+		var bigimgsrc = currentli.find("img").attr("bigimg");
+		var curnexttxt = currentli.find("img").attr("text");
+		$("#pic1").attr("src", bigimgsrc);
+		$("#pic1").attr("curindex", currentliindex);
+		$(".miaoshu").text(curnexttxt)
+	});
+});
+});
+</script> 

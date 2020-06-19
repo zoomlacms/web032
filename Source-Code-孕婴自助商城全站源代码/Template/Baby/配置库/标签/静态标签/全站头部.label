@@ -1,0 +1,122 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>789</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="top_func"&gt;
+&lt;div class="container"&gt;
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right top_func_r"&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li class="dropdown"&gt;
+&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;我的订单&lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;ul class="dropdown-menu" role="menu"&gt;
+&lt;li&gt;&lt;a href="/user/PreViewOrder.aspx?menu=Orderinfo"&gt;历史订单&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/user/PreViewOrder.aspx?menu=Orderinfo&amp;type=4"&gt;已完成订单&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/user/PreViewOrder.aspx?menu=Cartinfo"&gt;未完成订单&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;|&lt;/span&gt;&lt;/li&gt;
+&lt;li class="dropdown"&gt;
+&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;我的收藏夹&lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;ul class="dropdown-menu" role="menu"&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyFavori.aspx?type=1"&gt;内容收藏&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyFavite_Shop.aspx?type=2"&gt;商品收藏&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Content/MyFavite_UserShop.aspx?type=3"&gt;店家收藏&lt;/a&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;|&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Profile/PointRecord.aspx" target="_blank"&gt;商家中心&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/UserZone/Default.aspx" target="_blank"&gt;会员俱乐部&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(113)/}" target="_blank"&gt;客户服务&lt;/a&gt;&lt;/li&gt;
+&lt;li class="mobile hidden-xs"&gt;&lt;a href="#" target="_blank"&gt;&lt;i class="fa fa-mobile-phone"&gt;&lt;/i&gt;手机版&lt;/a&gt;&lt;div class="mobile_box text-center"&gt;&lt;strong&gt;扫描"&lt;em&gt;婴童之家&lt;/em&gt;"手机版二维码&lt;/strong&gt;&lt;p&gt;你将获得更多优惠哦!&lt;/p&gt;&lt;/strong&gt;&lt;img src="{$CssDir/}images/code.jpg" alt="婴童之家手机版二维码" /&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt; 
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 top_func_l"&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li class="active"&gt;&lt;a href="{ZL:GerNodeLinkUrl(6)/}"&gt;特卖会&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GerNodeLinkUrl(6)/}"&gt;团购&lt;/a&gt;&lt;/li&gt;
+{ZL.Label id="会员登录状态"/}
+&lt;li&gt;&lt;a href="/User/Register.aspx" target="_blank"&gt;注册&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="logo_box"&gt;
+&lt;div class="container"&gt;
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs" id="logo"&gt;
+&lt;a href="/"&gt;&lt;img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 logo_box_r"&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"&gt;&lt;a href="{ZL:GetInfoUrl(274)/}"&gt;100%正品&lt;/a&gt;&lt;/li&gt;
+&lt;li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"&gt;&lt;a href="{ZL:GetInfoUrl(275)/}"&gt;大招商保障&lt;/a&gt;&lt;/li&gt;
+&lt;li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"&gt;&lt;a href="{ZL:GetInfoUrl(276)/}"&gt;退货返运费&lt;/a&gt;&lt;/li&gt;
+&lt;li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"&gt;&lt;a href="/Cart/Cart.aspx?ProClass=1"&gt;购物袋(0) &gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;form action="/Search/SearchList.aspx" method="get" target="_blank"&gt;
+&lt;div class="input-group"&gt;
+&lt;input type="text" class="form-control" placeholder="请输入标题、关键字、或文件名" name="KeyWord"&gt;
+&lt;span class="input-group-btn"&gt;
+&lt;button class="btn btn-default" type="submit"&gt;搜索&lt;/button&gt;
+&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 logo_box_l"&gt;
+&lt;a href="#"&gt;&lt;img src="{$CssDir/}images/code.jpg" class="img-responsive center-block" alt="{$SiteName/}微信二维码" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--logo部分结束--&gt; 
+
+
+&lt;nav class="navbar navbar-default" role="navigation" id="scolls"&gt;
+&lt;div class="container"&gt; 
+&lt;div class="navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a class="navbar-brand visible-xs-inline" href="/"&gt;&lt;img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+ 
+&lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+&lt;ul class="nav navbar-nav"&gt;
+&lt;li class="home" id="sort_list"&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}"&gt;&lt;i class="fa fa-list"&gt;&lt;/i&gt;商品分类&lt;/a&gt;
+&lt;/li&gt; 
+&lt;li &gt;&lt;a href="/"&gt;全站首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}" target="_blank"&gt;新品推荐&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(7)/}" target="_blank"&gt;商家地带&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}" target="_blank"&gt;童装资讯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(9)/}" target="_blank"&gt;开店指导&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(17)/}" target="_blank"&gt;人才招聘&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/index" target="_blank"&gt;圈子&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;/div&gt; 
+&lt;/div&gt; 
+&lt;/nav&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

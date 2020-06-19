@@ -1,0 +1,127 @@
+﻿{ZL.Source id="产品模型数据源标签"/}
+{ZL.Source id="标准黄页申请信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="产品模型数据源标签" FD="Title" page="0"/}</title> 
+<meta name="Keywords" content="{SField sid="产品模型数据源标签" FD="Tagkey" page="0"/}">
+{ZL:Boot()/} 
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<style> 
+.page_nav_r .page_node{SField sid="产品模型数据源标签" FD="NodeID" page="0"/} a{ background:#8015B7; text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="page_top">
+<div class="container">
+<ul class="list-unstyled">
+<li><a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a></li>
+<li><a href="/">网站首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">招商中心</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">网站导航<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="{ZL:GetNodeLinkUrl(6)/}">新品推荐</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">商家地带</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}">童装资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(9)/}">开店指导</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(17)/}">人才招聘</a></li>
+<li><a href="/index">圈子</a></li> 
+</ul>
+</li>
+<li><img src="{$CssDir/}images/page_top.png" alt="火热招商中..."></li>
+</ul>
+</div>
+</div>
+<div class="container page_banner">   
+<img src="{$CssDir/}images/page_banner.jpg" class="center-block" alt="企业banner" />   
+<div id="page_logo"><a href="/Page/Default.aspx?pageid={$GetRequest(pageid)$}">{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}</a>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><p>{SField sid="标准黄页申请信息数据源" FD="syn" page="0"/}</p></div></div>
+<span></span>
+</div>   
+<div class="container"> 
+<div class="page_nav">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 page_nav_l"> 
+<a href="/page/default.aspx?pageid={$GetRequest(pageid)$}"><img src="/{SField sid="标准黄页申请信息数据源" FD="LOGO" page="0"/}" class="center-block img-responsive" alt="{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}"></a> 
+</div> 
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 col-lg-offset-3 page_nav_r">  
+<ul class="list-unstyled"> 
+<li class="page_home"><a href="/page/default.aspx?pageid={$GetRequest(pageid)$}">企业首页</a></li> 
+<li class="page_node1"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=1">企业新闻</a></li> 
+<li class="page_node2"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=2">产品中心</a></li>
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=3">企业风采</a></li>  
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=5">关于我们</a></li> 
+<li class="page_node4"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=4">客户留言</a></li> 
+</ul> 
+</div> 
+<div class="clearfix"></div>
+</div> 
+</div>  
+<div class="container">
+<div class="page_procontent">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 page_procontent_l">
+<div class="page_proitem">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 page_proitem_l">
+<div class="tb-booth tb-pic tb-s310">
+<a href='{ZL:GetPicUrl({SField sid="产品模型数据源标签" FD="pic" page="0"/})/}'><img src='{ZL:GetPicUrl({SField sid="产品模型数据源标签" FD="pic" page="0"/})/}' alt='{SField sid="常规商品数据源" FD="Proname" page="0"/}' rel='{ZL:GetPicUrl({SField sid="产品模型数据源标签" FD="pic" page="0"/})/}' class="jqzoom" /></a>
+</div>
+<div class="row">
+<ul class="tb-thumb list-unstyled" id="thumblist">
+<script>
+var pics='{SField sid="产品模型数据源标签" FD="pics" page="0"/}';
+var picArr=pics.split('$');
+if(picArr.length>0)
+{
+	for(i=0;i<picArr.length;i++)
+	{
+		var pic=picArr[i].split('|');
+		if(i==0)
+			document.write('<li class="tb-selected col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="tb-pic tb-s40"><a href="javascript:;"><img src="{$UploadDir/}'+pic[1]+'" mid="{$UploadDir/}'+pic[1]+'" big="{$UploadDir/}'+pic[1]+'"></a></div></li>');
+		else
+			document.write('<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="tb-pic tb-s40"><a href="javascript:;"><img src="{$UploadDir/}'+pic[1]+'" mid="{$UploadDir/}'+pic[1]+'" big="{$UploadDir/}'+pic[1]+'"></a></div></li>');
+	
+	}
+}
+</script>
+</ul>
+</div> 
+ 
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 page_proitem_r">
+<h1>{SField sid="产品模型数据源标签" FD="Title" page="0"/}</h1>
+{SField sid="产品模型数据源标签" FD="syn" page="0"/}
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="page_procontent_body">
+{SField sid="产品模型数据源标签" FD="content" page="0"/}
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 page_procontent_r page_class_r">
+{ZL.Label id="抽取指定会员头像" UserID="{SField sid="标准黄页申请信息数据源" FD="UserID" page="0"/}" /}
+<ul class="list-unstyled"> 
+<li><span><i class="fa fa-user"></i>联系人：</span>{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}</li>
+<li><span><i class="fa fa-phone"></i> 电 话：</span><a href="tel:{SField sid="标准黄页申请信息数据源" FD="tel" page="0"/}">{SField sid="标准黄页申请信息数据源" FD="tel" page="0"/}</a></li>
+<li><span><i class="fa fa-qq"></i> Q Q：</span>{SField sid="标准黄页申请信息数据源" FD="qq" page="0"/}</li>
+<li><span><i class="fa fa-envelope"></i>E-mail：</span><a href="mailto:{SField sid="标准黄页申请信息数据源" FD="email" page="0"/}">{SField sid="标准黄页申请信息数据源" FD="email" page="0"/}</a></li>
+<li><span><i class="fa fa-map-marker"></i> 地 址：</span>{SField sid="标准黄页申请信息数据源" FD="address" page="0"/}</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+{ZL.Label id="全站底部"/} 
+</body>
+</html>
+<script>
+$().ready(function(e) {
+ $("#thumblist li a").click(function(){ 
+		$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+		$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+		$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+	});  
+});
+ 
+</script>

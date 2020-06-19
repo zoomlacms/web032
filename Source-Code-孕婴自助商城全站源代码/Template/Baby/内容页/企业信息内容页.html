@@ -1,0 +1,117 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<style>
+
+</style>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="company">  
+<div class="container mysite">
+<ul class="breadcrumb">
+<li>当前位置：<a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /} 
+</ul>
+</div><!--面包屑导航结束 -->
+<div class="container company_info">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 company_info_l">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+关于婴童世家
+</a>
+</h4>
+</div>
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+<div class="panel-body">
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="8" TitleNum="30" ShowNum="10" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+开店指导
+</a>
+</h4>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+<div class="panel-body">
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="9" TitleNum="18" ShowNum="10" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+帮助中心
+</a>
+</h4>
+</div>
+<div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+<div class="panel-body">
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="34" TitleNum="30" ShowNum="10" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 company_info_r">
+<h1 class="text-center">{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1> 
+<div class="company_content">{SField sid="文章模型数据源标签" FD="content" page="{SField sid="文章模型数据源标签" FD="K_pages" page="0"/}"/}</div> 
+</div>
+</div>
+</div> 
+</div>
+{ZL.Label id="全站底部"/} 
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+} 
+</script>

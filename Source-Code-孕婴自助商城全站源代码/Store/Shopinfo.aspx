@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Shopinfo.aspx.cs" Inherits="Store_Shopinfo" EnableViewStateMac="false" %>

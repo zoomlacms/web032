@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="API_ShowTria, App_Web_z4kjfw0u" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

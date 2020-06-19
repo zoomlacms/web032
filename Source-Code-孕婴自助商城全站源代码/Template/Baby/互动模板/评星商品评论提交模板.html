@@ -1,0 +1,152 @@
+﻿
+     <form id="form8"  action="/PubAction.aspx">
+     <input type="hidden" name="PubID" id="PubID" value="8" />
+     <input type="hidden" name="PubContentid" id="PubContentid" value="{PubContentid/}" />
+		 <input type="hidden" name="scoreVal" id="scoreVal" />
+     <style type="text/css">
+             .starImg {display:inline-block;width:110px;height:22px;background:url(/App_Themes/Microblog/images/star_org3.gif);cursor:pointer;}
+         </style>
+    
+    <div class="starOPDiv">
+        <span class="opNameDesc">包装满意度</span>
+        <span class="starSpan">
+        <input type="radio" name="BZMYD" checked="checked" value="5"/>
+        <span class="starImg"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="BZMYD" value="4"/>
+       <span class="starImg" style="background-position:-22px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="BZMYD" value="3"/>
+       <span class="starImg" style="background-position:-44px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="BZMYD" value="2"/>
+        <span class="starImg" style="background-position:-66px;"></span>
+    </span>
+        <span class="starSpan">
+         <input type="radio" name="BZMYD" value="1"/>
+         <span class="starImg" style="background-position:-88px;"></span>
+    </span>
+      </div>
+    
+    <div class="starOPDiv">
+        <span class="opNameDesc">送货满意度</span>
+        <span class="starSpan">
+        <input type="radio" name="SHMYD" checked="checked" value="5"/>
+        <span class="starImg"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="SHMYD" value="4"/>
+       <span class="starImg" style="background-position:-22px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="SHMYD" value="3"/>
+       <span class="starImg" style="background-position:-44px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="SHMYD" value="2"/>
+        <span class="starImg" style="background-position:-66px;"></span>
+    </span>
+        <span class="starSpan">
+         <input type="radio" name="SHMYD" value="1"/>
+         <span class="starImg" style="background-position:-88px;"></span>
+    </span>
+      </div>
+    
+    <div class="starOPDiv">
+        <span class="opNameDesc">配送满意度</span>
+        <span class="starSpan">
+        <input type="radio" name="PSMYD" checked="checked" value="5"/>
+        <span class="starImg"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="PSMYD" value="4"/>
+       <span class="starImg" style="background-position:-22px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="PSMYD" value="3"/>
+       <span class="starImg" style="background-position:-44px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="PSMYD" value="2"/>
+        <span class="starImg" style="background-position:-66px;"></span>
+    </span>
+        <span class="starSpan">
+         <input type="radio" name="PSMYD" value="1"/>
+         <span class="starImg" style="background-position:-88px;"></span>
+    </span>
+      </div>
+    
+    <div class="starOPDiv">
+        <span class="opNameDesc">服务满意度</span>
+        <span class="starSpan">
+        <input type="radio" name="FWMYD" checked="checked" value="5"/>
+        <span class="starImg"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="FWMYD" value="4"/>
+       <span class="starImg" style="background-position:-22px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="FWMYD" value="3"/>
+       <span class="starImg" style="background-position:-44px;"></span>
+    </span>
+        <span class="starSpan">
+        <input type="radio" name="FWMYD" value="2"/>
+        <span class="starImg" style="background-position:-66px;"></span>
+    </span>
+        <span class="starSpan">
+         <input type="radio" name="FWMYD" value="1"/>
+         <span class="starImg" style="background-position:-88px;"></span>
+    </span>
+      </div>
+    
+     <input type="submit" value="提交" onclick="starSub(this);";/>
+              <script type="text/javascript">
+                  $().ready(function () {
+                      $(".starSpan").click(function () { $(this).find(":radio")[0].checked = true; });
+                      var v = "";
+                      $(".totalDiv label").each(function () { v += $(this).text() + ","; });
+                      $.ajax({
+                          type: "Post",
+                          url: "/PubAction.aspx",
+                          data: { action: "GetScore1", value: v, "pubID": 8, "cid": "{PubContentid/}" },//内容ID
+                          async: true,
+                          dataType: "json",
+                          success: function (data)
+                          {
+                              var result =  $(".totalDiv").html();
+                              for (var i = 0; i < data.length; i++)
+                              {
+                                  result=result.replace(data[i].s, data[i].v);
+                              }
+                              $(".totalDiv").html(result).show();
+                          },
+                          error: function (data){}
+                      });
+                  });
+                  function starSub(obj) {
+                      var result = "";
+                      radioArr = $(obj).parent().find("input:radio:checked");
+                      for (var i = 0; i < radioArr.length; i++) {
+                          result += $(radioArr[i]).attr("name") + ":" + $(radioArr[i]).val() + ",";
+                      }
+                      $(obj).parent().find("#scoreVal").val(result);
+                      $(obj).parent().find("#scoreVal").val();
+                  }
+        </script>
+    
+        <div class="totalDiv" style="display:none;">
+    
+        <div><span>包装满意度：5星:<label>BZMYD:5</label>次,4星<label>BZMYD:4</label>次,3星<label>BZMYD:3</label>次,2星<label>BZMYD:2</label>次,1星<label>BZMYD:1</label>次</span></div>
+    
+        <div><span>送货满意度：5星:<label>SHMYD:5</label>次,4星<label>SHMYD:4</label>次,3星<label>SHMYD:3</label>次,2星<label>SHMYD:2</label>次,1星<label>SHMYD:1</label>次</span></div>
+    
+        <div><span>配送满意度：5星:<label>PSMYD:5</label>次,4星<label>PSMYD:4</label>次,3星<label>PSMYD:3</label>次,2星<label>PSMYD:2</label>次,1星<label>PSMYD:1</label>次</span></div>
+    
+        <div><span>服务满意度：5星:<label>FWMYD:5</label>次,4星<label>FWMYD:4</label>次,3星<label>FWMYD:3</label>次,2星<label>FWMYD:2</label>次,1星<label>FWMYD:1</label>次</span></div>
+    
+      </div>
+    

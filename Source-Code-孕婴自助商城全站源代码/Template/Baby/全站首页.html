@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{$SiteName/}-专注母婴产品_首页</title>  
+{$MetaKeywords/}
+{$MetaDescription/} 
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css" rel="stylesheet" />  
+<style>
+#scolls .navbar-nav .home a{ background:#BD1067;}
+</style>
+</head>
+<body>
+<div class="top_func">
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right top_func_r">
+<ul class="list-unstyled">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的订单<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo">历史订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo&type=4">已完成订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Cartinfo">未完成订单</a></li> 
+</ul>
+</li>
+<li><span>|</span></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的收藏夹<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Content/MyFavori.aspx?type=1">内容收藏</a></li>
+<li><a href="/User/Content/MyFavite_Shop.aspx?type=2">商品收藏</a></li>
+<li><a href="/User/Content/MyFavite_UserShop.aspx?type=3">店家收藏</a></li>  
+</ul>
+</li>
+<li><span>|</span></li>
+<li><a href="/User/Profile/PointRecord.aspx" target="_blank">商家中心</a></li>
+<li><a href="/User/UserZone/Default.aspx" target="_blank">会员俱乐部</a></li>
+<li><a href="{ZL:GetInfoUrl(113)/}" target="_blank">客户服务</a></li>
+<li class="mobile hidden-xs"><a href="#" target="_blank"><i class="fa fa-mobile-phone"></i>手机版</a><div class="mobile_box text-center"><strong>扫描"<em>婴童之家</em>"手机版二维码</strong><p>你将获得更多优惠哦!</p></strong><img src="{$CssDir/}images/code.jpg" alt="婴童之家手机版二维码" /></div></li>
+</ul>
+</div> 
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 top_func_l">
+<ul class="list-unstyled">
+<li class="active"><a href="{ZL:GerNodeLinkUrl(6)/}">特卖会</a></li>
+<li><a href="{ZL:GerNodeLinkUrl(6)/}">团购</a></li>
+{ZL.Label id="会员登录状态"/}
+<li><a href="/User/Register.aspx" target="_blank">注册</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="logo_box">
+<div class="container">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs" id="logo">
+<a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 logo_box_r">
+<ul class="list-unstyled">
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="{ZL:GetInfoUrl(274)/}">100%正品</a></li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="{ZL:GetInfoUrl(275)/}">大招商保障</a></li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="{ZL:GetInfoUrl(276)/}">退货返运费</a></li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="/Cart/Cart.aspx?ProClass=1">购物袋(0) ></a></li>
+</ul>
+<form action="/Search/SearchList.aspx" method="get" target="_blank">
+<div class="input-group">
+<input type="text" class="form-control" placeholder="请输入标题、关键字、或文件名" name="KeyWord">
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit">搜索</button>
+</span>
+</div>
+
+</form>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 logo_box_l">
+<a href="#"><img src="{$CssDir/}images/code.jpg" class="img-responsive center-block" alt="{$SiteName/}微信二维码" /></a>
+</div>
+</div>
+</div>
+<!--logo部分结束--> 
+
+
+<nav class="navbar navbar-default" role="navigation" id="scolls">
+<div class="container"> 
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand visible-xs-inline" href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a>
+</div>
+ 
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="home" id="sort_list"><a href="{ZL:GetNodeLinkUrl(6)/}"><i class="fa fa-list"></i>商品分类</a>
+</li> 
+<li ><a href="/">全站首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(6)/}" target="_blank">新品推荐</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}" target="_blank">商家地带</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}" target="_blank">童装资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(9)/}" target="_blank">开店指导</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(17)/}" target="_blank">人才招聘</a></li>
+<li><a href="/index" target="_blank">圈子</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav> 
+<div class="shop_banner">
+<div class="container">
+<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 padding0 shop_banner_l">
+{ZL.Label id="输出商品一级子栏目列表" ParentID="6" ShowNum="10" /}
+</div> 
+<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 padding0 shop_banner_m">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators pull-right text-right">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+<li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+<li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+<li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+<li data-target="#carousel-example-generic" data-slide-to="4">5</li>
+<div class="clearfix"></div>
+</ol> 
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+</div> 
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<img src="{$CssDir/}images/btn_prev.png" alt="上一张" />
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<img src="{$CssDir/}images/btn_next.png" alt="下一张" />
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div> 
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5 shop_banner_r">
+<div role="tabpanel">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">行情动态</a></li>
+<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">市场分析</a></li>
+<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">商城快讯</a></li>
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home"><ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="4" TitleNum="35" ShowNum="12" /}
+</ul></div>
+<div role="tabpanel" class="tab-pane" id="profile"><ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="27" TitleNum="35" ShowNum="12" /}
+</ul></div>
+<div role="tabpanel" class="tab-pane" id="messages"><ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="7" TitleNum="35" ShowNum="12" /}
+</ul></div>
+</div>
+
+</div>
+</div>
+</div>
+</div> 
+
+
+
+
+
+
+<div class="container home_hop">
+<h4><a href="#"><em class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+</em>每日新品</a><span>每天一换，只卖精品</span></h4>
+<div class="row">
+{ZL.Label id="输出带缩放页面商品" NodeID="6" ShowNum="8" TitleNum="24" /}
+</div>
+</div>
+
+<div class="">
+<div class="container friendsite">
+<h4><a href="#"><em class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-pied-piper-alt fa-stack-1x fa-inverse"></i>
+</em>入驻商家</a><span>加入我们，服务你们</span></h4>
+<div class="row padding10">
+<ul class="list-unstyled"> 
+{ZL.Label id="首页输出店铺列表" ShowNum="8" /}
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!--广告栏结束-->
+<div class="container home_sort">
+<div class="home_sort_r">
+<ul class="list-unstyled text-center"> 
+<li><a href="{ZL:GetNodeLinkUrl(128)/}" target="_blank"><img src="{$CssDir/}images/sort1.jpg" class="center-block" alt="餐饮" /></a><a href="#" target="_blank">餐饮</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(129)/}" target="_blank"><img src="{$CssDir/}images/sort2.jpg" class="center-block" alt="面食" /></a><a href="#" target="_blank">面食</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(130)/}" target="_blank"><img src="{$CssDir/}images/sort3.jpg" class="center-block" alt="汉堡" /></a><a href="#" target="_blank">汉堡</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(131)/}" target="_blank"><img src="{$CssDir/}images/sort4.jpg" class="center-block" alt="烧烤" /></a><a href="#" target="_blank">烧烤</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(132)/}" target="_blank"><img src="{$CssDir/}images/sort5.jpg" class="center-block" alt="饰品" /></a><a href="#" target="_blank">饰品</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(133)/}" target="_blank"><img src="{$CssDir/}images/sort6.jpg" class="center-block" alt="服装" /></a><a href="#" target="_blank">服装</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(134)/}" target="_blank"><img src="{$CssDir/}images/sort7.jpg" class="center-block" alt="家居" /></a><a href="#" target="_blank">家居</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(135)/}" target="_blank"><img src="{$CssDir/}images/sort8.jpg" class="center-block" alt="环保" /></a><a href="#" target="_blank">环保</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(136)/}" target="_blank"><img src="{$CssDir/}images/sort9.jpg" class="center-block" alt="教育" /></a><a href="#" target="_blank">教育</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(137)/}" target="_blank"><img src="{$CssDir/}images/sort10.jpg" class="center-block" alt="美容" /></a><a href="#" target="_blank">美容</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(138)/}" target="_blank"><img src="{$CssDir/}images/sort11.jpg" class="center-block" alt="特色" /></a><a href="#" target="_blank">特色</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(139)/}" target="_blank"><img src="{$CssDir/}images/sort12.jpg" class="center-block" alt="小吃" /></a><a href="#" target="_blank">小吃</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(140)/}" target="_blank"><img src="{$CssDir/}images/sort13.jpg" class="center-block" alt="饮料" /></a><a href="#" target="_blank">饮料</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(141)/}" target="_blank"><img src="{$CssDir/}images/sort14.jpg" class="center-block" alt="汽车" /></a><a href="#" target="_blank">汽车</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(142)/}" target="_blank"><img src="{$CssDir/}images/sort15.jpg" class="center-block" alt="新奇特" /></a><a href="#" target="_blank">新奇特</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(143)/}" target="_blank"><img src="{$CssDir/}images/sort16.jpg" class="center-block" alt="网络" /></a><a href="#" target="_blank">网络</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="container product">
+<div class="row padding10">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 padding5 product_l">
+<div class="product_title"><span><strong>1F</strong>重点招商</span></div>
+<ul class="list-unstyled text-center">
+{ZL.Label id="首页输出招商列表" NodeID="16" TitleNum="30" ShowNum="16" /}
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding5 product_r">
+<div class="product_r_title"><span>实力推荐</span></div>
+<ul class="list-unstyled text-center">
+{ZL.Label id="输出最新黄页图片列表" ShowNum="4" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container home_video"> 
+<div class="video_floor"><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(14)/}" target="_blank">更多</a></span><span><strong>2F</strong>视频招商</span></div>
+<div class="home_video_list">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding5 text-center home_video_l">
+{ZL.Label id="首页推荐视频" NodeID="14" TitieNum="30" /}
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 padding5 home_video_r">
+<ul class="list-unstyled text-center">
+{ZL.Label id="首页非推荐视频列表" NodeID="14" TitieNum="26" ShowNum="6" /}
+</ul>
+</div>
+<div class="clearfix"></div>
+</div> 
+</div>
+<div class="container home_main">
+<div class="row padding10">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5 home_main_l">
+<div class="main_title"><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(1)/}" target="_blank">更多>></a></span><span class="pull-left">推荐新闻</span></div>
+<div class="clearfix"></div>
+<ul class="list-unstyled">
+{ZL.Label id="输出推荐文章列表_带简介_无时间" NodeID="1" TitleNum="30" SynNum="96" ShowNum="3" /}
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5 home_main_m">
+<div class="main_title"><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(2)/}" target="_blank">更多>></a></span><span class="pull-left">行情动态</span></div>
+<div class="clearfix"></div>
+{ZL.Label id="输出推荐文章列表_带图带简介" NodeID="2" TitleNum="24" SynNum="84" /}
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点非推荐信息_无时间属性" NodeID="2" TitleNum="50" ShowNum="5" /}
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5 home_main_r">
+<div class="main_title"><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(3)/}" target="_blank">更多>></a></span><span class="pull-left">市场分析</span></div>
+<div class="clearfix"></div>
+{ZL.Label id="输出推荐文章列表_带图带简介" NodeID="3" TitleNum="24" SynNum="84" /}
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点非推荐信息_无时间属性" NodeID="3" TitleNum="50" ShowNum="5" /}
+</ul>
+</div>
+</div>
+</div>
+<nav id="footer">
+<div class="container text-center">
+<ul class="list-inline">
+<li><a href="{ZL:GetInfoUrl(110)/}" target="_blank">关于我们</a></li>
+<li><span>/</span></li>
+<li><a href="{ZL:GetInfoUrl(111)/}" target="_blank">联系我们</a></li>
+<li><span>/</span></li>
+<li><a href="{ZL:GetInfoUrl(112)/}" target="_blank">加入我们</a></li>
+<li><span>/</span></li>
+<li><a href="{ZL:GetInfoUrl(113)/}" target="_blank">客服中心</a></li>
+<li><span>/</span></li>
+<li><a href="{ZL:GetInfoUrl(115)/}" target="_blank">商家入驻</a></li>
+<li><span>/</span></li>
+<li><a href="{ZL:GetNodeLinkUrl(15)/}" target="_blank">友情链接</a></li>
+<li><span>/</span></li>
+<li><a href="{ZL:GetInfoUrl(114)/}" target="_blank">版权声明</a></li>
+</ul>
+<p>{$Copyright/}</p>  
+</div>
+</nav>
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+ 
+$(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+ //   $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+ //   $(this).find(".sort_list").fadeOut();
+});; 
+ $(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+    $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+    $(this).find(".sort_list").fadeOut();
+});; 
+$(".shop_sort").mouseover(function(e) {
+    $(this).css("background",'#fff');
+	$(this).find(".sort_li").show();
+	$(this).find("a").css("color",'#333');
+}).mouseout(function(e) {
+    $(this).css("background",'none');
+	$(this).find(".sort_li").hide();
+	$(this).find("a").css("color",'#fff');
+});; 
+</script>

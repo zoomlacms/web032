@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>26</ModelID>
+    <ModelName>留言招商留言的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_page</TableName>
+    <ItemName>留言</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>glyphicon glyphicon-bookmark</ItemIcon>
+    <ModelType>7</ModelType>
+    <ContentModule>/互动模板/默认留言招商留言模板.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>true</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail>0</Thumbnail>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

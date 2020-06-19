@@ -1,0 +1,80 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<style type="text/css"> 
+
+</style>
+</head>
+<body> 
+{ZL.Label id="全站头部"/}
+<div class="mybanenr">
+<div class="container">
+<img src="{$CssDir/}images/mybanner1.jpg" class="center-block img-responsive" alt="健康人生" />
+</div>
+</div> 
+<div class="container mysite">
+<ul class="breadcrumb">
+<li>当前位置：<a href="/">首页</a></li>
+<li>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</li>
+</ul>
+</div>
+<div class="container conlist">
+<div class="row">
+<div class="padding5">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 conlist_l padding10">
+<h1 class="text-center" id="aa">{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</h1>
+<ul class="list-unstyled"> 
+{ZL.Label id="输出指定节点标题列表_带时间简介_分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}"  TitleNum="80" ShowNum="10" SynNum="200" /} 
+</ul> 
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 conlist_r padding10">
+<div class="hot_company">
+<div class="conlist_r_title"><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(7)/}" target="_blank">更多</a></span><span class="pull-left">推荐商家</span></div>
+<ul class="list-unstyled">
+{ZL.Label id="列表页推荐商户列表" NodeID="7" TitleNum="30" ShowNum="4" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="hot_product">
+<div class="conlist_r_title"><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(6)/}" target="_blank">更多</a></span><span class="pull-left">热门商品</span></div>
+<ul class="list-unstyled">
+{ZL.Label id="商城热卖商品标签_不分页列表" NodeID="6" TitleNum="30" ShowNum="2" /}
+</ul>
+</div>
+<div class="page_ad"><img src="{$CssDir/}images/page_ad1.jpg" class="center-block img-responsive" alt="惠氏邀您一起入会" /></div>
+{ZL.Label id="循环显示父ID下其他子节点与信息链接列表" ParentID="1" ShowNum="100" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" /}
+</div>
+</div>
+</div> 
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html> 
+<script>
+$(".conlist_l #conlist_ul li").eq(0).find(".consyn").show();
+$(".conlist_l #conlist_ul li").mouseover(function(e) {
+	$(".conlist_l #conlist_ul li").find(".consyn").hide(); 
+	$(this).find(".consyn").show();	 
+});
+$(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+    $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+    $(this).find(".sort_list").fadeOut();
+});; 
+</script>
+ 

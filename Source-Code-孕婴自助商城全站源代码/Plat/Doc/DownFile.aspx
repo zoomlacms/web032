@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Plat_Doc_DownFile, App_Web_qd0ptw1x" enableviewstate="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

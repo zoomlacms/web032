@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>834</LabelID>
+    <LabelName>会员登录状态</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;li&gt;&lt;a href="/User/"&gt;欢迎您，{ZL:GetuserName()/}&lt;/a&gt;&lt;/li&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>用户登录判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>1</IsOpen>
+    <FalseContent>&lt;li&gt;&lt;a href="/User/Login.aspx"&gt;登录&lt;/a&gt;&lt;/li&gt;</FalseContent>
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

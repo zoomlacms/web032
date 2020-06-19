@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>27</ModelID>
+    <ModelName>评星商品评论的模型</ModelName>
+    <Description />
+    <TableName>ZL_Pub_sppl</TableName>
+    <ItemName>评星</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>glyphicon glyphicon-star</ItemIcon>
+    <ModelType>7</ModelType>
+    <ContentModule>/互动模板/评星商品评论模板.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>true</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>0</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail>0</Thumbnail>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

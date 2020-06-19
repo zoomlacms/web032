@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>孕婴童自助商城-专注母婴产品_首页</title>  
+<meta name="Keywords" content="婴童,孕婴,亲子">
+<meta name="Description" content="孕婴童自助商城官方网站"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/JS/jquery-1.11.0.min.js" ></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<link href="/dist/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Template/Baby/style/global.css" rel="stylesheet" />  
+<style>
+#scolls .navbar-nav .home a{ background:#BD1067;}
+</style>
+</head>
+<body>
+<div class="top_func">
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right top_func_r">
+<ul class="list-unstyled">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的订单<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo">历史订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Orderinfo&type=4">已完成订单</a></li>
+<li><a href="/user/PreViewOrder.aspx?menu=Cartinfo">未完成订单</a></li> 
+</ul>
+</li>
+<li><span>|</span></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">我的收藏夹<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Content/MyFavori.aspx?type=1">内容收藏</a></li>
+<li><a href="/User/Content/MyFavite_Shop.aspx?type=2">商品收藏</a></li>
+<li><a href="/User/Content/MyFavite_UserShop.aspx?type=3">店家收藏</a></li>  
+</ul>
+</li>
+<li><span>|</span></li>
+<li><a href="/User/Profile/PointRecord.aspx" target="_blank">商家中心</a></li>
+<li><a href="/User/UserZone/Default.aspx" target="_blank">会员俱乐部</a></li>
+<li><a href="/Item/113.aspx" target="_blank">客户服务</a></li>
+<li class="mobile hidden-xs"><a href="#" target="_blank"><i class="fa fa-mobile-phone"></i>手机版</a><div class="mobile_box text-center"><strong>扫描"<em>婴童之家</em>"手机版二维码</strong><p>你将获得更多优惠哦!</p></strong><img src="/Template/Baby/style/images/code.jpg" alt="婴童之家手机版二维码" /></div></li>
+</ul>
+</div> 
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 top_func_l">
+<ul class="list-unstyled">
+<li class="active"><a href="[ERR:不可识别的扩展函数标签]">特卖会</a></li>
+<li><a href="[ERR:不可识别的扩展函数标签]">团购</a></li>
+<li><a href="/User/">欢迎您，乐乐</a></li>
+<li><a href="/User/Register.aspx" target="_blank">注册</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="logo_box">
+<div class="container">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs" id="logo">
+<a href="/"><img src="/Template/Baby/style/images/logo.png" class="img-responsive" alt="孕婴童自助商城" /></a>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 logo_box_r">
+<ul class="list-unstyled">
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="/Item/274.aspx">100%正品</a></li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="/Item/275.aspx">大招商保障</a></li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="/Item/276.aspx">退货返运费</a></li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><a href="/Cart/Cart.aspx?ProClass=1">购物袋(0) ></a></li>
+</ul>
+<form action="/Search/SearchList.aspx" method="get" target="_blank">
+<div class="input-group">
+<input type="text" class="form-control" placeholder="请输入标题、关键字、或文件名" name="KeyWord">
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit">搜索</button>
+</span>
+</div>
+
+</form>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 logo_box_l">
+<a href="#"><img src="/Template/Baby/style/images/code.jpg" class="img-responsive center-block" alt="孕婴童自助商城微信二维码" /></a>
+</div>
+</div>
+</div>
+<!--logo部分结束--> 
+
+
+<nav class="navbar navbar-default" role="navigation" id="scolls">
+<div class="container"> 
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand visible-xs-inline" href="/"><img src="/Template/Baby/style/images/logo.png" class="img-responsive" alt="孕婴童自助商城" /></a>
+</div>
+ 
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="home" id="sort_list"><a href="/Class_6/Default.aspx"><i class="fa fa-list"></i>商品分类</a>
+</li> 
+<li ><a href="/">全站首页</a></li>
+<li><a href="/Class_6/Default.aspx" target="_blank">新品推荐</a></li>
+<li><a href="/Class_7/Default.aspx" target="_blank">商家地带</a></li>
+<li><a href="/Class_4/Default.aspx" target="_blank">童装资讯</a></li>
+<li><a href="/Class_9/Default.aspx" target="_blank">开店指导</a></li>
+<li><a href="/Class_17/Default.aspx" target="_blank">人才招聘</a></li>
+<li><a href="/index" target="_blank">圈子</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav> 
+<div class="shop_banner">
+<div class="container">
+<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 padding0 shop_banner_l">
+<div class="shop_sort"><img src="/Template/Baby/style/images/colth.png" alt="童装" /><a href="/Class_39/Default.aspx" target="_self">童装</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_48/Default.aspx" target="_self">童鞋</a></li><li><a href="/Class_49/Default.aspx" target="0">童袜</a></li><li><a href="/Class_50/Default.aspx" target="0">婴装</a></li><li><a href="/Class_51/Default.aspx" target="0">童帽/围巾/手套及服饰配件</a></li><li><a href="/Class_52/Default.aspx" target="0">童装</a></li><li><a href="/Class_144/Default.aspx" target="0">时尚童装</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/milk.png" alt="奶粉" /><a href="/Class_40/Default.aspx" target="_self">奶粉</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_53/Default.aspx" target="0">1段</a></li><li><a href="/Class_54/Default.aspx" target="0">2段</a></li><li><a href="/Class_55/Default.aspx" target="0">3段</a></li><li><a href="/Class_56/Default.aspx" target="0">4段</a></li><li><a href="/Class_57/Default.aspx" target="0">特殊配方奶粉</a></li><li><a href="/Class_58/Default.aspx" target="0">羊奶粉</a></li><li><a href="/Class_59/Default.aspx" target="0">孕妇奶粉</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/milk.png" alt="营养品" /><a href="/Class_41/Default.aspx" target="_self">营养品</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_60/Default.aspx" target="0">DHA健脑</a></li><li><a href="/Class_61/Default.aspx" target="0">补钙/铁/锌硒</a></li><li><a href="/Class_62/Default.aspx" target="0">维生素</a></li><li><a href="/Class_63/Default.aspx" target="0">初乳</a></li><li><a href="/Class_64/Default.aspx" target="0">清火/开胃</a></li><li><a href="/Class_65/Default.aspx" target="0">益生菌</a></li><li><a href="/Class_66/Default.aspx" target="0">绿色食用油</a></li><li><a href="/Class_67/Default.aspx" target="0">营养素</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/food.png" alt="辅食" /><a href="/Class_42/Default.aspx" target="_self">辅食</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_68/Default.aspx" target="0">果汁/水</a></li><li><a href="/Class_69/Default.aspx" target="0">泥糊类</a></li><li><a href="/Class_70/Default.aspx" target="0">冲调类</a></li><li><a href="/Class_71/Default.aspx" target="0">米粉/菜粉</a></li><li><a href="/Class_72/Default.aspx" target="0">儿童糖果</a></li><li><a href="/Class_73/Default.aspx" target="0">营养面</a></li><li><a href="/Class_74/Default.aspx" target="0">肉松</a></li><li><a href="/Class_75/Default.aspx" target="0">长牙期食品</a></li><li><a href="/Class_76/Default.aspx" target="0">干果</a></li><li><a href="/Class_77/Default.aspx" target="0">调味品</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/milk.png" alt="喂养用品" /><a href="/Class_43/Default.aspx" target="_self">喂养用品</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_78/Default.aspx" target="0">加热消毒</a></li><li><a href="/Class_79/Default.aspx" target="0">外出/存储用具</a></li><li><a href="/Class_80/Default.aspx" target="0">水杯/壶</a></li><li><a href="/Class_81/Default.aspx" target="0">妈妈喂哺用品</a></li><li><a href="/Class_82/Default.aspx" target="0">喂哺清洁</a></li><li><a href="/Class_83/Default.aspx" target="0">奶瓶</a></li><li><a href="/Class_84/Default.aspx" target="0">奶嘴</a></li><li><a href="/Class_85/Default.aspx" target="0">牙胶</a></li><li><a href="/Class_86/Default.aspx" target="0">餐具</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/chair.png" alt="车床椅" /><a href="/Class_44/Default.aspx" target="_self">车床椅</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_87/Default.aspx" target="0">伞推车</a></li><li><a href="/Class_88/Default.aspx" target="0">扭扭车</a></li><li><a href="/Class_89/Default.aspx" target="0">滑板车</a></li><li><a href="/Class_90/Default.aspx" target="0">三轮车</a></li><li><a href="/Class_91/Default.aspx" target="0">电动车</a></li><li><a href="/Class_92/Default.aspx" target="0">自行车</a></li><li><a href="/Class_93/Default.aspx" target="0">婴童床</a></li><li><a href="/Class_94/Default.aspx" target="0">餐椅</a></li><li><a href="/Class_95/Default.aspx" target="0">摇椅</a></li><li><a href="/Class_96/Default.aspx" target="0">汽车座椅</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/diaper.png" alt="尿裤" /><a href="/Class_45/Default.aspx" target="_self">尿裤</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_98/Default.aspx" target="0">拉拉裤</a></li><li><a href="/Class_99/Default.aspx" target="0">新生儿</a></li><li><a href="/Class_100/Default.aspx" target="0">防尿垫巾/尿布</a></li><li><a href="/Class_101/Default.aspx" target="0">布尿裤</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/toys.png" alt="玩具" /><a href="/Class_46/Default.aspx" target="_self">玩具</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_102/Default.aspx" target="0">男孩玩具</a></li><li><a href="/Class_103/Default.aspx" target="0">女孩玩具</a></li><li><a href="/Class_104/Default.aspx" target="0">牙胶摇铃</a></li><li><a href="/Class_105/Default.aspx" target="0">毛绒玩具</a></li><li><a href="/Class_106/Default.aspx" target="0">布艺玩具</a></li><li><a href="/Class_107/Default.aspx" target="0">游戏垫</a></li><li><a href="/Class_108/Default.aspx" target="0">DIY创意</a></li><li><a href="/Class_109/Default.aspx" target="0">拼插玩具</a></li><li><a href="/Class_110/Default.aspx" target="0">肢体协调</a></li><li><a href="/Class_111/Default.aspx" target="0">乐音玩具</a></li></ul></div><div class="clearfix"></div></div><div class="shop_sort"><img src="/Template/Baby/style/images/mother.png" alt="妈妈用品" /><a href="/Class_47/Default.aspx" target="_self">妈妈用品</a><div class="sort_li"><ul class="list-unstyled"><li><a href="/Class_118/Default.aspx" target="0">孕产期奶粉</a></li><li><a href="/Class_119/Default.aspx" target="0">孕产期营养</a></li><li><a href="/Class_120/Default.aspx" target="0">防辐射</a></li><li><a href="/Class_121/Default.aspx" target="0">孕妇装</a></li><li><a href="/Class_122/Default.aspx" target="0">孕内衣</a></li><li><a href="/Class_123/Default.aspx" target="0">产后塑身内衣</a></li><li><a href="/Class_124/Default.aspx" target="0">哺乳服装</a></li><li><a href="/Class_125/Default.aspx" target="_self">身体护理</a></li><li><a href="/Class_126/Default.aspx" target="0">口腔健康</a></li><li><a href="/Class_127/Default.aspx" target="0">产后塑身去纹</a></li></ul></div><div class="clearfix"></div></div>
+</div> 
+<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 padding0 shop_banner_m">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators pull-right text-right">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+<li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+<li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+<li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+<li data-target="#carousel-example-generic" data-slide-to="4">5</li>
+<div class="clearfix"></div>
+</ol> 
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<a href="javascript:;"><img src="/Template/Baby/style/images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="/Template/Baby/style/images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="/Template/Baby/style/images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="/Template/Baby/style/images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="/Template/Baby/style/images/p1.jpg" alt="" /></a> 
+</div>
+</div> 
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<img src="/Template/Baby/style/images/btn_prev.png" alt="上一张" />
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<img src="/Template/Baby/style/images/btn_next.png" alt="下一张" />
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div> 
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5 shop_banner_r">
+<div role="tabpanel">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">行情动态</a></li>
+<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">市场分析</a></li>
+<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">商城快讯</a></li>
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home"><ul class="list-unstyled">
+
+<li><a href="/Item/65.aspx" title="外贸童装与内销童装的区别" target="0" style="">外贸童装与内销童装的区别</a></li>
+
+<li><a href="/Item/64.aspx" title="6大原则教你挑选安全童装" target="0" style="">6大原则教你挑选安全童装</a></li>
+
+<li><a href="/Item/63.aspx" title="专家教你如何选童装" target="0" style="">专家教你如何选童装</a></li>
+
+<li><a href="/Item/62.aspx" title="衣服标签懂多少 教你如何给宝宝挑衣服" target="0" style="">衣服标签懂多少 教你如何给宝宝挑衣服</a></li>
+
+<li><a href="/Item/61.aspx" title="网购童装七成有安全隐患" target="0" style="">网购童装七成有安全隐患</a></li>
+
+<li><a href="/Item/60.aspx" title="这些不安全的童装 爸妈要警惕" target="0" style="">这些不安全的童装 爸妈要警惕</a></li>
+
+<li><a href="/Item/59.aspx" title="购买童装认准A类标识" target="0" style="">购买童装认准A类标识</a></li>
+
+<li><a href="/Item/58.aspx" title="婴儿衣服欧盟标准你知道吗?" target="0" style="">婴儿衣服欧盟标准你知道吗?</a></li>
+
+<li><a href="/Item/57.aspx" title="网购宝宝衣服 教你如何辨别衣服质量" target="0" style="">网购宝宝衣服 教你如何辨别衣服质量</a></li>
+
+<li><a href="/Item/56.aspx" title="童装搭配必修课:看颜色、款式和用料" target="0" style="">童装搭配必修课:看颜色、款式和用料</a></li>
+
+<li><a href="/Item/55.aspx" title="“外贸童装”不能说的秘密? 专家支招如何挑选童装" target="0" style="">“外贸童装”不能说的秘密? 专家支招</a></li>
+
+<li><a href="/Item/54.aspx" title="打造二三线城市霸主童装品牌——玛琪曼蒂童装" target="0" style="">打造二三线城市霸主童装品牌——玛琪</a></li>
+
+</ul></div>
+<div role="tabpanel" class="tab-pane" id="profile"><ul class="list-unstyled">
+
+<li><a href="/Item/380.aspx" title="成都好家乡超市有限公司" target="_self" style="">成都好家乡超市有限公司</a></li>
+
+<li><a href="/Item/379.aspx" title="嘉兴怡亚通怡源供应链管理有限公司" target="_self" style="">嘉兴怡亚通怡源供应链管理有限公司</a></li>
+
+<li><a href="/Item/378.aspx" title="名动时代（北京）科技有限公司" target="_self" style="">名动时代（北京）科技有限公司</a></li>
+
+<li><a href="/Item/377.aspx" title="沙依巴克区钱塘江路外贸基地以琳童装店" target="_self" style="">沙依巴克区钱塘江路外贸基地以琳童装</a></li>
+
+<li><a href="/Item/376.aspx" title="十堰贝美孕婴有限公司" target="_self" style="">十堰贝美孕婴有限公司</a></li>
+
+<li><a href="/Item/375.aspx" title="巨野县贝福特儿童摄影店" target="_self" style="">巨野县贝福特儿童摄影店</a></li>
+
+<li><a href="/Item/374.aspx" title="爱婴儿母婴用品商行" target="_self" style="">爱婴儿母婴用品商行</a></li>
+
+<li><a href="/Item/373.aspx" title="广州百田信息科技有限公司" target="_self" style="">广州百田信息科技有限公司</a></li>
+
+<li><a href="/Item/372.aspx" title="百姓网达人：怎样白菜价囤进口母婴用品" target="0" style="">百姓网达人：怎样白菜价囤进口母婴用</a></li>
+
+<li><a href="/Item/371.aspx" title="母婴行业PC时代将被移动时代所替代" target="0" style="">母婴行业PC时代将被移动时代所替代</a></li>
+
+<li><a href="/Item/370.aspx" title="中国青年IDOL环保母婴微商创业 行动公益项目签约仪式举行" target="0" style="">中国青年IDOL环保母婴微商创业 行动公</a></li>
+
+<li><a href="/Item/369.aspx" title="手机电商平台已成为母婴人群的最佳购物渠道" target="0" style="">手机电商平台已成为母婴人群的最佳购</a></li>
+
+</ul></div>
+<div role="tabpanel" class="tab-pane" id="messages"><ul class="list-unstyled">
+
+<li><a href="/Item/273.aspx" title="优力米尔招商加盟" target="_self" style="">优力米尔招商加盟</a></li>
+
+<li><a href="/Item/272.aspx" title="石家庄君乐宝乳业有限公司" target="_self" style="">石家庄君乐宝乳业有限公司</a></li>
+
+<li><a href="/Item/271.aspx" title="南昌友昌商贸有限公司" target="_self" style="">南昌友昌商贸有限公司</a></li>
+
+<li><a href="/Item/270.aspx" title="布鲁熊（中国）有限公司" target="_self" style="">布鲁熊（中国）有限公司</a></li>
+
+<li><a href="/Item/269.aspx" title="江西和欣实业股份有限公司" target="_self" style="">江西和欣实业股份有限公司</a></li>
+
+<li><a href="/Item/268.aspx" title="江西旺超实业有限公司" target="_self" style="">江西旺超实业有限公司</a></li>
+
+<li><a href="/Item/267.aspx" title="成都爱可依生物科技有限公司" target="_self" style="">成都爱可依生物科技有限公司</a></li>
+
+<li><a href="/Item/266.aspx" title="江西三诚实业有限公司" target="_self" style="">江西三诚实业有限公司</a></li>
+
+<li><a href="/Item/265.aspx" title="湖南美滋生物科技有限公司" target="_self" style="">湖南美滋生物科技有限公司</a></li>
+
+<li><a href="/Item/264.aspx" title="常熟市婴爵电子商务公司" target="_self" style="">常熟市婴爵电子商务公司</a></li>
+
+<li><a href="/Item/263.aspx" title="香港欧嘻高婴童用品公司" target="_self" style="">香港欧嘻高婴童用品公司</a></li>
+
+<li><a href="/Item/262.aspx" title="陕西关山乳业有限公司" target="_self" style="">陕西关山乳业有限公司</a></li>
+
+</ul></div>
+</div>
+
+</div>
+</div>
+</div>
+</div> 
+
+
+
+
+
+
+<div class="container home_hop">
+<h4><a href="#"><em class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+</em>每日新品</a><span>每天一换，只卖精品</span></h4>
+<div class="row">
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/87.aspx" title="金福贝健婴幼儿有机米粉" target="_blank"><img class="adver_zhe_img lazy" alt="金福贝健婴幼儿有机米粉" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/mfcf/jpg/2015/10/201510281513467011.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/87.aspx" title="金福贝健婴幼儿有机米粉" target="_blank">金福贝健婴幼儿有机米粉<span>4.2折起</span></a></p>
+</div>
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/83.aspx" title="味滋肴米粉" target="_blank"><img class="adver_zhe_img lazy" alt="味滋肴米粉" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/mfcf/jpg/2015/10/201510281439462549.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/83.aspx" title="味滋肴米粉" target="_blank">味滋肴米粉<span>4.2折起</span></a></p>
+</div>
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/32.aspx" title="鸿星尔克品牌童鞋 男女毛毛虫中童休闲舒适新款儿童跑步鞋 货到付款童装53115102012 彩蓝/荧光绿 33" target="_blank"><img class="adver_zhe_img lazy" alt="鸿星尔克品牌童鞋 男女毛毛虫中童休闲舒适新款儿童跑步鞋 货到付款童装53115102012 彩蓝/荧光绿 33" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/tx/jpg/2015/3/201503121929170017.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/32.aspx" title="鸿星尔克品牌童鞋 男女毛毛虫中童休闲舒适新款儿童跑步鞋 货到付款童装53115102012 彩蓝/荧光绿 33" target="_blank">鸿星尔克品牌童鞋 男女毛<span>4.2折起</span></a></p>
+</div>
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/81.aspx" title="多美滋精确优藴孕妇及哺乳期妇女营养奶粉300g/盒" target="_blank"><img class="adver_zhe_img lazy" alt="多美滋精确优藴孕妇及哺乳期妇女营养奶粉300g/盒" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/ycqnf/jpg/2015/3/201503132107513215.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/81.aspx" title="多美滋精确优藴孕妇及哺乳期妇女营养奶粉300g/盒" target="_blank">多美滋精确优藴孕妇及哺乳<span>4.2折起</span></a></p>
+</div>
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/80.aspx" title="贝因美金装爱+孕妈咪配方奶粉900g桶" target="_blank"><img class="adver_zhe_img lazy" alt="贝因美金装爱+孕妈咪配方奶粉900g桶" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/ycqnf/jpg/2015/3/201503132107007070.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/80.aspx" title="贝因美金装爱+孕妈咪配方奶粉900g桶" target="_blank">贝因美金装爱+孕妈咪配方<span>4.2折起</span></a></p>
+</div>
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/79.aspx" title="Wyeth惠氏s-26爱儿乐妈妈350g盒装 孕妇奶粉孕妈妈奶粉 原装进口" target="_blank"><img class="adver_zhe_img lazy" alt="Wyeth惠氏s-26爱儿乐妈妈350g盒装 孕妇奶粉孕妈妈奶粉 原装进口" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/ycqnf/jpg/2015/3/201503132105480520.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/79.aspx" title="Wyeth惠氏s-26爱儿乐妈妈350g盒装 孕妇奶粉孕妈妈奶粉 原装进口" target="_blank">Wyeth惠氏s-26爱儿乐妈妈3<span>4.2折起</span></a></p>
+</div>
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/78.aspx" title="Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉300g盒装" target="_blank"><img class="adver_zhe_img lazy" alt="Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉300g盒装" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/ycqnf/jpg/2015/3/201503132104599322.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/78.aspx" title="Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉300g盒装" target="_blank">Abbott雅培金装智护妈妈喜<span>4.2折起</span></a></p>
+</div>
+
+<div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 home_hop_r">
+<div class="adver_zhe">
+<div class="adver_zhe_r">
+<a href="/Shop/77.aspx" title="Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉800g新加坡进口" target="_blank"><img class="adver_zhe_img lazy" alt="Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉800g新加坡进口" onerror="javascript:this.src='/Images/nopic.gif';" src="/UploadFiles/ycqnf/jpg/2015/3/201503132104082124.jpg"  data-original="{mobile_image_one}"></a>
+</div>
+</div>
+<p><a href="/Shop/77.aspx" title="Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉800g新加坡进口" target="_blank">Abbott雅培金装智护妈妈喜<span>4.2折起</span></a></p>
+</div>
+
+</div>
+</div>
+
+<div class="">
+<div class="container friendsite">
+<h4><a href="#"><em class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-pied-piper-alt fa-stack-1x fa-inverse"></i>
+</em>入驻商家</a><span>加入我们，服务你们</span></h4>
+<div class="row padding10">
+<ul class="list-unstyled"> 
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=439" title="湖南迈亨母婴用品有限公司" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301649146136.jpg" class="center-block img-responsive" alt="湖南迈亨母婴用品有限公司"></a>
+<span><a href="/Store/StoreIndex.aspx?id=439" title="湖南迈亨母婴用品有限公司" target="_blank"></a></span>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=438" title="香港利邦实业控股有限公司" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301647565685.jpg" class="center-block img-responsive" alt="香港利邦实业控股有限公司"></a>
+<span><a href="/Store/StoreIndex.aspx?id=438" title="香港利邦实业控股有限公司" target="_blank"></a></span>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=437" title="江西贝棒儿童食品" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301646537672.jpg" class="center-block img-responsive" alt="江西贝棒儿童食品"></a>
+<span><a href="/Store/StoreIndex.aspx?id=437" title="江西贝棒儿童食品" target="_blank"></a></span>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=436" title="上海怡氏食品科技有限公司" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301646180184.jpg" class="center-block img-responsive" alt="上海怡氏食品科技有限公司"></a>
+<span><a href="/Store/StoreIndex.aspx?id=436" title="上海怡氏食品科技有限公司" target="_blank"></a></span>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=435" title="陕西关山乳业有限公司" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301645053219.jpg" class="center-block img-responsive" alt="陕西关山乳业有限公司"></a>
+<span><a href="/Store/StoreIndex.aspx?id=435" title="陕西关山乳业有限公司" target="_blank"></a></span>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=434" title="香港欧嘻高婴童用品公司" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301643482271.jpg" class="center-block img-responsive" alt="香港欧嘻高婴童用品公司"></a>
+<span><a href="/Store/StoreIndex.aspx?id=434" title="香港欧嘻高婴童用品公司" target="_blank"></a></span>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=433" title="常熟市婴爵电子商务公司" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301641285256.jpg" class="center-block img-responsive" alt="常熟市婴爵电子商务公司"></a>
+<span><a href="/Store/StoreIndex.aspx?id=433" title="常熟市婴爵电子商务公司" target="_blank"></a></span>
+</li>
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<a href="/Store/StoreIndex.aspx?id=429" title="湖南美滋生物科技有限公司" target="_blank"><img src="/UploadFiles/jpg/2015/10/201510301631559338.jpg" class="center-block img-responsive" alt="湖南美滋生物科技有限公司"></a>
+<span><a href="/Store/StoreIndex.aspx?id=429" title="湖南美滋生物科技有限公司" target="_blank"></a></span>
+</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!--广告栏结束-->
+<div class="container home_sort">
+<div class="home_sort_r">
+<ul class="list-unstyled text-center"> 
+<li><a href="/Class_128/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort1.jpg" class="center-block" alt="餐饮" /></a><a href="#" target="_blank">餐饮</a></li>
+<li><a href="/Class_129/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort2.jpg" class="center-block" alt="面食" /></a><a href="#" target="_blank">面食</a></li>
+<li><a href="/Class_130/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort3.jpg" class="center-block" alt="汉堡" /></a><a href="#" target="_blank">汉堡</a></li>
+<li><a href="/Class_131/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort4.jpg" class="center-block" alt="烧烤" /></a><a href="#" target="_blank">烧烤</a></li>
+<li><a href="/Class_132/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort5.jpg" class="center-block" alt="饰品" /></a><a href="#" target="_blank">饰品</a></li>
+<li><a href="/Class_133/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort6.jpg" class="center-block" alt="服装" /></a><a href="#" target="_blank">服装</a></li>
+<li><a href="/Class_134/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort7.jpg" class="center-block" alt="家居" /></a><a href="#" target="_blank">家居</a></li>
+<li><a href="/Class_135/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort8.jpg" class="center-block" alt="环保" /></a><a href="#" target="_blank">环保</a></li>
+<li><a href="/Class_136/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort9.jpg" class="center-block" alt="教育" /></a><a href="#" target="_blank">教育</a></li>
+<li><a href="/Class_137/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort10.jpg" class="center-block" alt="美容" /></a><a href="#" target="_blank">美容</a></li>
+<li><a href="/Class_138/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort11.jpg" class="center-block" alt="特色" /></a><a href="#" target="_blank">特色</a></li>
+<li><a href="/Class_139/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort12.jpg" class="center-block" alt="小吃" /></a><a href="#" target="_blank">小吃</a></li>
+<li><a href="/Class_140/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort13.jpg" class="center-block" alt="饮料" /></a><a href="#" target="_blank">饮料</a></li>
+<li><a href="/Class_141/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort14.jpg" class="center-block" alt="汽车" /></a><a href="#" target="_blank">汽车</a></li>
+<li><a href="/Class_142/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort15.jpg" class="center-block" alt="新奇特" /></a><a href="#" target="_blank">新奇特</a></li>
+<li><a href="/Class_143/Default.aspx" target="_blank"><img src="/Template/Baby/style/images/sort16.jpg" class="center-block" alt="网络" /></a><a href="#" target="_blank">网络</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="container product">
+<div class="row padding10">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 padding5 product_l">
+<div class="product_title"><span><strong>1F</strong>重点招商</span></div>
+<ul class="list-unstyled text-center">
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/131.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121907257224.jpg" class="center-block img-responsive" alt="P2P陷入“危险关系”：“自融”成风" /></a><a href="/Item/131.aspx" target="_blank">P2P陷入“危险关系”：“自融”</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/130.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121906353270.jpg" class="center-block img-responsive" alt="生物医药研发“航母”落地打造世界级“药谷”" /></a><a href="/Item/130.aspx" target="_blank">生物医药研发“航母”落地打造世</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/129.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121906033261.jpg" class="center-block img-responsive" alt="文化创意园区摆脱二房东尴尬 向服务平台转身" /></a><a href="/Item/129.aspx" target="_blank">文化创意园区摆脱二房东尴尬 向</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/128.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121904236929.jpg" class="center-block img-responsive" alt="太仓在上海举办文化产业推介会取得圆满成功" /></a><a href="/Item/128.aspx" target="_blank">太仓在上海举办文化产业推介会取</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/127.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121903157938.jpg" class="center-block img-responsive" alt="南汇工业园区举行智城推介会 首批企业签约" /></a><a href="/Item/127.aspx" target="_blank">南汇工业园区举行智城推介会 首</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/126.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121902470784.jpg" class="center-block img-responsive" alt="紫竹创业中心一企业晋级首届全国创新创业大赛决赛" /></a><a href="/Item/126.aspx" target="_blank">紫竹创业中心一企业晋级首届全国</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/125.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121902026045.jpg" class="center-block img-responsive" alt="互联网时代 制造企业试水跨境电商产业园" /></a><a href="/Item/125.aspx" target="_blank">互联网时代 制造企业试水跨境电</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/124.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121901134490.jpg" class="center-block img-responsive" alt="围绕国资国企改革 联合产权交易所各类交易过千亿客商来武山考察洽谈项目投资事宜" /></a><a href="/Item/124.aspx" target="_blank">围绕国资国企改革 联合产权交易</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/123.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121900231511.jpg" class="center-block img-responsive" alt="数据折射经济转型升级 数据折射经济转型升级 数据折射经济转型升级" /></a><a href="/Item/123.aspx" target="_blank">数据折射经济转型升级 数据折射</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/122.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121859452621.jpg" class="center-block img-responsive" alt="今后3年基础设施建设投入将向郊区倾斜" /></a><a href="/Item/122.aspx" target="_blank">今后3年基础设施建设投入将向郊</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/121.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121858597388.jpg" class="center-block img-responsive" alt="金融国资纵向整合赢得新动力金融国资纵向整合赢得新动力" /></a><a href="/Item/121.aspx" target="_blank">金融国资纵向整合赢得新动力金融</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/120.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121857520585.jpg" class="center-block img-responsive" alt="文化金融征信系统启动将建全国首个文金数据库" /></a><a href="/Item/120.aspx" target="_blank">文化金融征信系统启动将建全国首</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/119.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121857083961.jpg" class="center-block img-responsive" alt="未来中国制造的两大引擎：智能制造+互联网经济" /></a><a href="/Item/119.aspx" target="_blank">未来中国制造的两大引擎：智能制</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/118.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121856251610.jpg" class="center-block img-responsive" alt="跨国公司技术垄断 中国工业机器人难“自主”" /></a><a href="/Item/118.aspx" target="_blank">跨国公司技术垄断 中国工业机器</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/117.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121855341763.jpg" class="center-block img-responsive" alt="11家空调企业再掀价格战 两会热议制造业升级" /></a><a href="/Item/117.aspx" target="_blank">11家空调企业再掀价格战 两会热</a></li>
+
+<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 padding5"><a href="/Item/116.aspx" target="_blank"><img src="/UploadFiles/zdzs/jpg/2015/3/201503121853596815.jpg" class="center-block img-responsive" alt="上海产业结构调整成效显现" /></a><a href="/Item/116.aspx" target="_blank">上海产业结构调整成效显现</a></li>
+
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding5 product_r">
+<div class="product_r_title"><span>实力推荐</span></div>
+<ul class="list-unstyled text-center">
+
+<li><a href="/page/default.aspx?pageid=2" title="江西旺超实业集团有限公司" target="_blank"><img src="/UploadFiles/UserUpload/gif/2015/3/201503101749227582.gif" class="center-block img-responsive" alt="江西旺超实业集团有限公司" /></a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<div class="container home_video"> 
+<div class="video_floor"><span class="pull-right"><a href="/Class_14/Default.aspx" target="_blank">更多</a></span><span><strong>2F</strong>视频招商</span></div>
+<div class="home_video_list">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding5 text-center home_video_l">
+<div class="play_bg">
+<img src="/UploadFiles/video/jpg/2015/3/201503121523158067.jpg" class="center-block img-responsive" alt="上海盛雨来公司亮相上海CBME婴童展彰显品牌实力" /><a href="/Item/99.aspx" target="_blank"></a>
+</div>
+<a href="/Item/99.aspx" target="_blank">上海盛雨来公司亮相上海CBME婴童</a>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 padding5 home_video_r">
+<ul class="list-unstyled text-center">
+   
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5"><div class="play_bg"><img src="/UploadFiles/video/jpg/2015/3/201503121530055472.jpg" class="center-block img-responsive" alt="爱儿乐游泳馆10分钟招商片" /><a href="/Item/100.aspx" target="_blank"></a></div>
+<a href="/Item/100.aspx" target="_blank">爱儿乐游泳馆10分钟招商片</a>
+</li> 
+  
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5"><div class="play_bg"><img src="/UploadFiles/video/jpg/2015/3/201503121515552615.jpg" class="center-block img-responsive" alt="娜拉婴童用品2012京正广州展尽显完美身姿" /><a href="/Item/98.aspx" target="_blank"></a></div>
+<a href="/Item/98.aspx" target="_blank">娜拉婴童用品2012京正广州展</a>
+</li> 
+  
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5"><div class="play_bg"><img src="/UploadFiles/video/jpg/2015/3/201503121741055790.jpg" class="center-block img-responsive" alt="2015年水孩子水育早教加盟招商仪式启动" /><a href="/Item/96.aspx" target="_blank"></a></div>
+<a href="/Item/96.aspx" target="_blank">2015年水孩子水育早教加盟招</a>
+</li> 
+  
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5"><div class="play_bg"><img src="/UploadFiles/video/jpg/2015/3/201503121740539601.jpg" class="center-block img-responsive" alt="牧野渔趣婴童食品品牌惊艳亮相17届京正展" /><a href="/Item/93.aspx" target="_blank"></a></div>
+<a href="/Item/93.aspx" target="_blank">牧野渔趣婴童食品品牌惊艳亮</a>
+</li> 
+  
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5"><div class="play_bg"><img src="/UploadFiles/video/jpg/2015/3/201503121740361668.jpg" class="center-block img-responsive" alt="新西兰鲁贝比国际集团有限公司上海CBME展火爆视频" /><a href="/Item/92.aspx" target="_blank"></a></div>
+<a href="/Item/92.aspx" target="_blank">新西兰鲁贝比国际集团有限公</a>
+</li> 
+  
+<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5"><div class="play_bg"><img src="/UploadFiles/video/jpg/2015/3/201503121130030042.jpg" class="center-block img-responsive" alt="婴童之家招商宣传视频" /><a href="/Item/90.aspx" target="_blank"></a></div>
+<a href="/Item/90.aspx" target="_blank">婴童之家招商宣传视频</a>
+</li> 
+
+</ul>
+</div>
+<div class="clearfix"></div>
+</div> 
+</div>
+<div class="container home_main">
+<div class="row padding10">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5 home_main_l">
+<div class="main_title"><span class="pull-right"><a href="/Class_1/Default.aspx" target="_blank">更多>></a></span><span class="pull-left">推荐新闻</span></div>
+<div class="clearfix"></div>
+<ul class="list-unstyled">
+
+<li><a href="/Item/410.aspx" target="_blank">新希望“何不”纯牛奶将打破乳业</a><p>近日，针对当前网购、代购中频现“假洋货”婴儿纸尿裤问题，天津检验检疫局加强进口婴儿纸尿裤等一次性...</p></li>
+
+<li><a href="/Item/407.aspx" target="_blank">黑龙江省加强婴幼儿配方乳粉质量</a><p>近年来，随着食品饮料行业的快速发展，市面上售卖的儿童食品种类繁多，精美的外包装更是吸引了不少儿童...</p></li>
+
+<li><a href="/Item/402.aspx" target="_blank">全球时尚童装市场前景大好 详解</a><p>针对母婴用品行业加盟市场而言，与沿街店铺、商场相比，越来越多的商家看准了小区客流相对稳定、投入资...</p></li>
+
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5 home_main_m">
+<div class="main_title"><span class="pull-right"><a href="/Class_2/Default.aspx" target="_blank">更多>></a></span><span class="pull-left">行情动态</span></div>
+<div class="clearfix"></div>
+<div class="news_rec">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding5 news_rec_l">
+<a href="/Item/21.aspx" target="_blank"><img src="/UploadFiles/xqdt/jpg/2015/3/201503101730564184.jpg" class="center-block img-responsive" alt="爱亲母婴年度总结：建母婴连锁品牌 掀母婴加盟热潮" /></a>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 padding5 news_rec_r">
+<a href="/Item/21.aspx" target="_blank">爱亲母婴年度总结：建母婴</a>
+<p>凤舞吉祥，齐绘崭新蓝图；金羊开泰，迈进全新未来!2月14日，爱亲母婴2015“新起点，新征程...</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<ul class="list-unstyled">
+
+<li><a href="/Item/421.aspx" title="asdsad" target="0" style="">asdsad</a></li>
+
+<li><a href="/Item/417.aspx" title="  婴儿清润手口湿巾 " target="0" style="">  婴儿清润手口湿巾 </a></li>
+
+<li><a href="/Item/416.aspx" title="婴儿紫草油" target="0" style="">婴儿紫草油</a></li>
+
+<li><a href="/Item/415.aspx" title="婴儿松花热痱粉" target="0" style="">婴儿松花热痱粉</a></li>
+
+<li><a href="/Item/414.aspx" title="婴儿电热蚊香液" target="0" style="">婴儿电热蚊香液</a></li>
+
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5 home_main_r">
+<div class="main_title"><span class="pull-right"><a href="/Class_3/Default.aspx" target="_blank">更多>></a></span><span class="pull-left">市场分析</span></div>
+<div class="clearfix"></div>
+<div class="news_rec">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding5 news_rec_l">
+<a href="/Item/5.aspx" target="_blank"><img src="/UploadFiles/image/20150310/6356158308774535075406011.jpg" class="center-block img-responsive" alt="美留学生把大批奶粉当行李寄 遭中国海关退回" /></a>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 padding5 news_rec_r">
+<a href="/Item/5.aspx" target="_blank">美留学生把大批奶粉当行李</a>
+<p>据美国媒体3月7日报道，在美中国留学生刘同学向媒体投诉称，数月前帮朋友在位于法拉盛的一...</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<ul class="list-unstyled">
+
+<li><a href="/Item/420.aspx" title="我们的团队" target="0" style="">我们的团队</a></li>
+
+<li><a href="/Item/419.aspx" title="企业精神" target="0" style="">企业精神</a></li>
+
+<li><a href="/Item/19.aspx" title="汕头市动漫协会成立 助推传统产业加速转型" target="0" style="">汕头市动漫协会成立 助推传统产业加速转型</a></li>
+
+<li><a href="/Item/18.aspx" title="CIDPEX2015深圳生活用纸年会订货优惠抢先看" target="0" style="">CIDPEX2015深圳生活用纸年会订货优惠抢先看</a></li>
+
+<li><a href="/Item/9.aspx" title="盘点2014和氏乳业大事记" target="0" style="">盘点2014和氏乳业大事记</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<nav id="footer">
+<div class="container text-center">
+<ul class="list-inline">
+<li><a href="/Item/110.aspx" target="_blank">关于我们</a></li>
+<li><span>/</span></li>
+<li><a href="/Item/111.aspx" target="_blank">联系我们</a></li>
+<li><span>/</span></li>
+<li><a href="/Item/112.aspx" target="_blank">加入我们</a></li>
+<li><span>/</span></li>
+<li><a href="/Item/113.aspx" target="_blank">客服中心</a></li>
+<li><span>/</span></li>
+<li><a href="/Item/115.aspx" target="_blank">商家入驻</a></li>
+<li><span>/</span></li>
+<li><a href="/Class_15/Default.aspx" target="_blank">友情链接</a></li>
+<li><span>/</span></li>
+<li><a href="/Item/114.aspx" target="_blank">版权声明</a></li>
+</ul>
+<p>Copyright &copy;2015 孕婴童自助商城. All Rights Reserved 版权所有 <br/>客服热线：021-50391046/50391047</p>  
+</div>
+</nav>
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+ 
+$(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+ //   $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+ //   $(this).find(".sort_list").fadeOut();
+});; 
+ $(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+    $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+    $(this).find(".sort_list").fadeOut();
+});; 
+$(".shop_sort").mouseover(function(e) {
+    $(this).css("background",'#fff');
+	$(this).find(".sort_li").show();
+	$(this).find("a").css("color",'#333');
+}).mouseout(function(e) {
+    $(this).css("background",'none');
+	$(this).find(".sort_li").hide();
+	$(this).find("a").css("color",'#fff');
+});; 
+</script>

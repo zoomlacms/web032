@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="API_UploadList, App_Web_mql3wxxl" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

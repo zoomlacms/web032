@@ -1,0 +1,475 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="shop_banner">
+<div class="container">
+<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 padding0 shop_banner_l">
+{ZL.Label id="输出商品一级子栏目列表" ParentID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="10" /}
+</div> 
+<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 padding0 shop_banner_m">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators pull-right text-right">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+<li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+<li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+<li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+<li data-target="#carousel-example-generic" data-slide-to="4">5</li>
+<div class="clearfix"></div>
+</ol> 
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+<div class="item">
+<a href="javascript:;"><img src="{$CssDir/}images/p1.jpg" alt="" /></a> 
+</div>
+</div> 
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<img src="{$CssDir/}images/btn_prev.png" alt="上一张" />
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<img src="{$CssDir/}images/btn_next.png" alt="下一张" />
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div> 
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5 shop_banner_r">
+<div class="shop_rec"><a href="javascript:;"><img src="{$CssDir/}images/pic1.jpg" class="center-block img-responsive" alt="" /></a></div>
+<div class="shop_news">
+<div class="shop_news_title"><span>商城快讯</span></div>
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="4" TitleNum="40" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+</div> 
+<div class="container mysite"> 
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="30" /} 
+</ul>
+</div>  
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>1F</em>童装</span></li>
+<li class="active"><a href="#wear1" role="tab" data-toggle="tab">童鞋</a></li>
+<li><a href="#wear2" role="tab" data-toggle="tab">童袜</a></li>
+<li><a href="#wear3" role="tab" data-toggle="tab">婴装</a></li>
+<li><a href="#wear4" role="tab" data-toggle="tab">童帽/围巾/手套服饰配件</a></li>
+<li><a href="#wear5" role="tab" data-toggle="tab">童装</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(39)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="wear1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="48" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="wear2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="49" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="wear3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="50" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="wear4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="51" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="wear5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="52" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>2F</em>奶粉</span></li>
+<li class="active"><a href="#milk1" role="tab" data-toggle="tab">1段</a></li>
+<li><a href="#milk2" role="tab" data-toggle="tab">2段</a></li>
+<li><a href="#milk3" role="tab" data-toggle="tab">3段</a></li>
+<li><a href="#milk4" role="tab" data-toggle="tab">4段</a></li>
+<li><a href="#milk5" role="tab" data-toggle="tab">特殊配方奶粉</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(40)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="milk1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="53" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="milk2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="54" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="milk3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="55" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="milk4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="56" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="milk5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="57" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>3F</em>营养品</span></li>
+<li class="active"><a href="#nutri1" role="tab" data-toggle="tab">DHA健脑</a></li>
+<li><a href="#nutri2" role="tab" data-toggle="tab">补钙/铁/锌硒</a></li>
+<li><a href="#nutri3" role="tab" data-toggle="tab">维生素</a></li>
+<li><a href="#nutri4" role="tab" data-toggle="tab">初乳</a></li>
+<li><a href="#nutri5" role="tab" data-toggle="tab">清火/开胃</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(41)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="nutri1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="60" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="nutri2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="61" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="nutri3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="62" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="nutri4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="63" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="nutri5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="64" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_ad">
+<a href="javascript:;"><img src="{$CssDir/}images/shop_ad1.jpg" class="center-block img-responsive" alt="商城广告位" /></a>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>4F</em>辅食</span></li>
+<li class="active"><a href="#food1" role="tab" data-toggle="tab">果汁/水</a></li>
+<li><a href="#food2" role="tab" data-toggle="tab">泥糊类</a></li>
+<li><a href="#food3" role="tab" data-toggle="tab">冲调类</a></li>
+<li><a href="#food4" role="tab" data-toggle="tab">米粉/菜粉</a></li>
+<li><a href="#food5" role="tab" data-toggle="tab">儿童糖果</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(42)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="food1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="68" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="food2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="69" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="food3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="70" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="food4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="71" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="food5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="72" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>5F</em>喂养用品</span></li>
+<li class="active"><a href="#feed1" role="tab" data-toggle="tab">加热消毒</a></li>
+<li><a href="#feed2" role="tab" data-toggle="tab">外出/存储用具</a></li>
+<li><a href="#feed3" role="tab" data-toggle="tab">水杯/壶</a></li>
+<li><a href="#feed4" role="tab" data-toggle="tab">妈妈喂哺用品</a></li>
+<li><a href="#feed5" role="tab" data-toggle="tab">喂哺清洁</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(43)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="feed1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="78" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="feed2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="79" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="feed3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="80" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="feed4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="81" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="feed5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="82" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>6F</em>车床椅</span></li>
+<li class="active"><a href="#car1" role="tab" data-toggle="tab">伞推车</a></li>
+<li><a href="#car2" role="tab" data-toggle="tab">扭扭车</a></li>
+<li><a href="#car3" role="tab" data-toggle="tab">滑板车</a></li>
+<li><a href="#car4" role="tab" data-toggle="tab">三轮车</a></li>
+<li><a href="#car5" role="tab" data-toggle="tab">电动车</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(39)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="car1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="87" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="car2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="88" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="car3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="89" TitleNum="50" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="car4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="90" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="car5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="91" TitleNum="46" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_ad">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"><a href="javascript:;"><img src="{$CssDir/}images/shop_ad2.jpg" class="center-block img-responsive" alt="商城广告位" /></a></div> 
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0"><a href="javascript:;"><img src="{$CssDir/}images/shop_ad3.jpg" class="center-block img-responsive" alt="商城广告位" /></a></div>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>7F</em>尿裤</span></li>
+<li class="active"><a href="#trousers1" role="tab" data-toggle="tab">拉拉裤</a></li>
+<li><a href="#trousers2" role="tab" data-toggle="tab">新生儿</a></li>
+<li><a href="#trousers3" role="tab" data-toggle="tab">防尿垫巾/尿布</a></li>
+<li><a href="#trousers4" role="tab" data-toggle="tab">布尿裤</a></li>
+<li><a>-</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(45)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="trousers1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="98" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="trousers2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="99" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="trousers3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="100" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="trousers4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="101" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>8F</em>玩具</span></li>
+<li class="active"><a href="#toy1" role="tab" data-toggle="tab">男孩玩具</a></li>
+<li><a href="#toy2" role="tab" data-toggle="tab">女孩玩具</a></li>
+<li><a href="#toy3" role="tab" data-toggle="tab">牙胶摇铃</a></li>
+<li><a href="#toy4" role="tab" data-toggle="tab">毛绒玩具</a></li>
+<li><a href="#toy5" role="tab" data-toggle="tab">游戏垫</a></li>
+<li></li>
+<li><a href="{ZL:GetNodeLinkUrl(46)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="toy1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="102" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="toy2">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="103" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="toy3">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="104" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="toy4">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="105" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="toy5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="106" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="container shop_list_item">
+<div class="shop_list_title">
+<ul class="nav nav-tabs" role="tablist">
+<li><span><em>9F</em>妈妈用品</span></li>
+<li class="active"><a href="#moth1" role="tab" data-toggle="tab">孕产期奶粉</a></li>
+<li><a href="#moth2" role="tab" data-toggle="tab">孕产期营养</a></li>
+<li><a href="#moth3" role="tab" data-toggle="tab">防辐射</a></li>
+<li><a href="#moth4" role="tab" data-toggle="tab">孕妇装</a></li>
+<li><a href="#moth5" role="tab" data-toggle="tab">孕内衣</a></li>
+<li></li>
+<li><a href="{ZL:GetNodeLinkUrl(47)/}" target="_blank">更多>></a></li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="moth1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="118" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="moth1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="119" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="moth1">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="120" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+<div class="tab-pane" id="moth5">
+<ul class="list-unstyled">
+{ZL.Label id="商城普通商品标签_不分页列表V3" NodeID="121" TitleNum="30" ShowNum="6" /}
+</ul>
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html> 
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+ 
+$(".top_func_r .mobile").mouseover(function(e) {
+    $(this).find(".mobile_box").show();
+}).mouseout(function(e) {
+    $(this).find(".mobile_box").hide();
+});;
+$("#scolls .navbar-nav #sort_list").mouseenter(function(e) {
+	$(this).css("background",'#BD1067');
+    $(this).find(".sort_list").fadeIn();
+}).mouseleave(function(e) {
+	$(this).css("background",'none');
+    $(this).find(".sort_list").fadeOut();
+});; 
+$(".shop_sort").mouseover(function(e) {
+    $(this).css("background",'#fff');
+	$(this).find(".sort_li").show();
+	$(this).find("a").css("color",'#333');
+}).mouseout(function(e) {
+    $(this).css("background",'none');
+	$(this).find(".sort_li").hide();
+	$(this).find("a").css("color",'#fff');
+});; 
+ 
+</script>

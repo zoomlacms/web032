@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>794</LabelID>
+    <LabelName>循环显示子节点与信息列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,0,1,节点ID|ShowNum,100,1,调用信息数|TitleNum,40,1,标题长度</LabelParam>
+    <LabelTable>ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName</LabelField>
+    <LabelWhere>ParentID=@NodeID</LabelWhere>
+    <LabelOrder>NodeID DESC</LabelOrder>
+    <LabelContent> {Repeate}
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10"&gt;
+&lt;div class="conlist_item"&gt;
+&lt;div class="conlist_item_title"&gt;&lt;span class="pull-right"&gt;&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}"&gt;更多&lt;/a&gt;&lt;/span&gt;&lt;span class="pull-left"&gt;{Field="NodeName"/}&lt;/span&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul class="list-unstyled"&gt;
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="{Field="NodeID"/}" TitleNum="@TitleNum" ShowNum="5" /}  
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+{/Repeate} </LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Baby</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

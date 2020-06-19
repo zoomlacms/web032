@@ -1,0 +1,144 @@
+﻿{ZL.Source id="标准黄页申请信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}_{$SiteName/}</title> 
+<meta name="Keywords" content="{SField sid="标准黄页申请信息数据源" FD="Keyword" page="0"/}" />
+<meta name="description" content="{SField sid="标准黄页申请信息数据源" FD="Meta_Description" page="0"/}" />  
+{ZL:Boot()/} 
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/> 
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<style> 
+.page_nav_r .page_home a{ background:#8015B7; text-decoration:none;}
+
+
+#ShonwIndex { background: #FFF; overflow:hidden;border: 1px dashed #CCC; line-height:28px;}/*首页产品中心滚动展示*/
+#ShonwIndex img { width:150px; height:120px;border: 1px solid #F2F2F2; padding:1px;}
+#ShowCo {float: left;width: 800%; text-align:center;}
+#ShowCo li{float:left; width:150px; margin-left:5px; font-weight:bold;}
+#ShowCo abbr{color:#F00;height:28px;line-height:28px;}
+#Show1 {float: left;}
+#Show2 {float: left;}
+
+</style>
+</head> 
+<body>
+<div class="page_top">
+<div class="container">
+<ul class="list-unstyled">
+<li><a href="/"><img src="{$LogoUrl/}" class="img-responsive" alt="{$SiteName/}" /></a></li>
+<li><a href="/">网站首页</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">招商中心</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">网站导航<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="{ZL:GetNodeLinkUrl(6)/}">新品推荐</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(7)/}">商家地带</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}">童装资讯</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(9)/}">开店指导</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(17)/}">人才招聘</a></li>
+<li><a href="/index">圈子</a></li> 
+</ul>
+</li>
+<li><img src="{$CssDir/}images/page_top.png" alt="火热招商中..."></li>
+</ul>
+</div>
+</div>
+<div class="container page_banner">   
+<img src="{$CssDir/}images/page_banner.jpg" class="center-block" alt="企业banner" />   
+<div id="page_logo"><a href="/Page/Default.aspx?pageid={$GetRequest(pageid)$}">{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}</a>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><p>{SField sid="标准黄页申请信息数据源" FD="syn" page="0"/}</p></div></div>
+<span></span>
+</div>   
+<div class="container"> 
+<div class="page_nav">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 page_nav_l"> 
+<a href="/page/default.aspx?pageid={$GetRequest(pageid)$}"><img src="/{SField sid="标准黄页申请信息数据源" FD="LOGO" page="0"/}" class="center-block img-responsive" alt="{SField sid="标准黄页申请信息数据源" FD="CompanyName" page="0"/}"></a> 
+</div> 
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 col-lg-offset-3 page_nav_r">  
+<ul class="list-unstyled"> 
+<li class="page_home"><a href="/page/default.aspx?pageid={$GetRequest(pageid)$}">企业首页</a></li> 
+<li class="page_node1"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=1">企业新闻</a></li> 
+<li class="page_node2"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=2">产品中心</a></li>
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=3">企业风采</a></li>  
+<li class="page_node3"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=5">关于我们</a></li> 
+<li class="page_node4"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=4">客户留言</a></li> 
+</ul> 
+</div> 
+<div class="clearfix"></div>
+</div> 
+</div> 
+<div class="container page_news">
+<div class="row">
+<div class="padding5">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding10 page_news_l">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol> 
+<div class="carousel-inner" role="listbox">
+{ZL.Label id="输出黄页节点推荐信息列表_带图" NodeID="1" Inputer="{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}" ShowNum="3" TitleNum="30" /} 
+</div> 
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+ 
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 padding10">
+<div class="page_news_m">
+<div class="page_info_title"><span class="pull-right"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=1">更多>></a></span><span>企业新闻</span></div>  
+<div class="clearfix"></div>
+<ul class="list-unstyled">
+{ZL.Label id="输出黄页节点信息列表_带时间" NodeID="1" Inputer="{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}" ShowNum="8" TitleNum="70" /} 
+</ul>
+</div>  
+</div>
+</div> 
+</div>
+<div class="clearfix"></div>
+</div> 
+<div class="container page_product">
+<div class="page_pro_title"><span class="pull-right"><a href="/Page/Pagelist.aspx?pageid={$GetRequest(pageid)$}&NodeID=2">更多>></a></span><span class="pull-left">产品系列</span></div>
+<ul class="list-unstyled text-center">
+{ZL.Label id="输出黄页产品列表_带图不分页" NodeID="2" Inputer="{SField sid="标准黄页申请信息数据源" FD="UserName" page="0"/}" ShowNum="4" TitleNum="40" /}
+</ul> 
+</div>
+
+</div>  
+<div class="container page_about"> 
+<div class="page_title text-center"><span>关于我们</span></div>
+<div class="page_about_content"> 
+<p>{SField sid="标准黄页申请信息数据源" FD="PageInfo" page="0"/}</p> 
+</div> 
+</div> 
+{ZL.Label id="全站底部"/}  
+</body>
+</html> 
+<script>
+$(".page_news_l .carousel-inner").find(".item").eq(0).addClass("active");
+
+var speed=10; //无缝滚动-数字越大速度越慢
+var tab=document.getElementById("ShonwIndex");
+var tab1=document.getElementById("Show1");
+var tab2=document.getElementById("Show2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+</script>

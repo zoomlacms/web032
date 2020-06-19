@@ -1,0 +1,179 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>806</LabelID>
+    <LabelName>商品评论调用标签</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>互动标签</LabelCate>
+    <LabelDesc>ZL_Pub_sppl分页标签</LabelDesc>
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>
+     &lt;form id="form8"  action="/PubAction.aspx"&gt;
+     &lt;input type="hidden" name="PubID" id="PubID" value="8" /&gt;
+     &lt;input type="hidden" name="PubContentid" id="PubContentid" value="{PubContentid/}" /&gt;
+		 &lt;input type="hidden" name="scoreVal" id="scoreVal" /&gt;
+     &lt;style type="text/css"&gt;
+             .starImg {display:inline-block;width:110px;height:22px;background:url(/App_Themes/Microblog/images/star_org3.gif);cursor:pointer;}
+         &lt;/style&gt;
+    
+    &lt;div class="starOPDiv"&gt;
+        &lt;span class="opNameDesc"&gt;包装满意度&lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="BZMYD" checked="checked" value="5"/&gt;
+        &lt;span class="starImg"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="BZMYD" value="4"/&gt;
+       &lt;span class="starImg" style="background-position:-22px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="BZMYD" value="3"/&gt;
+       &lt;span class="starImg" style="background-position:-44px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="BZMYD" value="2"/&gt;
+        &lt;span class="starImg" style="background-position:-66px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+         &lt;input type="radio" name="BZMYD" value="1"/&gt;
+         &lt;span class="starImg" style="background-position:-88px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+      &lt;/div&gt;
+    
+    &lt;div class="starOPDiv"&gt;
+        &lt;span class="opNameDesc"&gt;送货满意度&lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="SHMYD" checked="checked" value="5"/&gt;
+        &lt;span class="starImg"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="SHMYD" value="4"/&gt;
+       &lt;span class="starImg" style="background-position:-22px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="SHMYD" value="3"/&gt;
+       &lt;span class="starImg" style="background-position:-44px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="SHMYD" value="2"/&gt;
+        &lt;span class="starImg" style="background-position:-66px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+         &lt;input type="radio" name="SHMYD" value="1"/&gt;
+         &lt;span class="starImg" style="background-position:-88px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+      &lt;/div&gt;
+    
+    &lt;div class="starOPDiv"&gt;
+        &lt;span class="opNameDesc"&gt;配送满意度&lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="PSMYD" checked="checked" value="5"/&gt;
+        &lt;span class="starImg"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="PSMYD" value="4"/&gt;
+       &lt;span class="starImg" style="background-position:-22px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="PSMYD" value="3"/&gt;
+       &lt;span class="starImg" style="background-position:-44px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="PSMYD" value="2"/&gt;
+        &lt;span class="starImg" style="background-position:-66px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+         &lt;input type="radio" name="PSMYD" value="1"/&gt;
+         &lt;span class="starImg" style="background-position:-88px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+      &lt;/div&gt;
+    
+    &lt;div class="starOPDiv"&gt;
+        &lt;span class="opNameDesc"&gt;服务满意度&lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="FWMYD" checked="checked" value="5"/&gt;
+        &lt;span class="starImg"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="FWMYD" value="4"/&gt;
+       &lt;span class="starImg" style="background-position:-22px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="FWMYD" value="3"/&gt;
+       &lt;span class="starImg" style="background-position:-44px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+        &lt;input type="radio" name="FWMYD" value="2"/&gt;
+        &lt;span class="starImg" style="background-position:-66px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+        &lt;span class="starSpan"&gt;
+         &lt;input type="radio" name="FWMYD" value="1"/&gt;
+         &lt;span class="starImg" style="background-position:-88px;"&gt;&lt;/span&gt;
+    &lt;/span&gt;
+      &lt;/div&gt;
+    
+     &lt;input type="submit" value="提交" onclick="starSub(this);";/&gt;
+              &lt;script type="text/javascript"&gt;
+                  $().ready(function () {
+                      $(".starSpan").click(function () { $(this).find(":radio")[0].checked = true; });
+                      var v = "";
+                      $(".totalDiv label").each(function () { v += $(this).text() + ","; });
+                      $.ajax({
+                          type: "Post",
+                          url: "/PubAction.aspx",
+                          data: { action: "GetScore1", value: v, "pubID": 8, "cid": "{PubContentid/}" },//内容ID
+                          async: true,
+                          dataType: "json",
+                          success: function (data)
+                          {
+                              var result =  $(".totalDiv").html();
+                              for (var i = 0; i &lt; data.length; i++)
+                              {
+                                  result=result.replace(data[i].s, data[i].v);
+                              }
+                              $(".totalDiv").html(result).show();
+                          },
+                          error: function (data){}
+                      });
+                  });
+                  function starSub(obj) {
+                      var result = "";
+                      radioArr = $(obj).parent().find("input:radio:checked");
+                      for (var i = 0; i &lt; radioArr.length; i++) {
+                          result += $(radioArr[i]).attr("name") + ":" + $(radioArr[i]).val() + ",";
+                      }
+                      $(obj).parent().find("#scoreVal").val(result);
+                      $(obj).parent().find("#scoreVal").val();
+                  }
+        &lt;/script&gt;
+    
+        &lt;div class="totalDiv" style="display:none;"&gt;
+    
+        &lt;div&gt;&lt;span&gt;包装满意度：5星:&lt;label&gt;BZMYD:5&lt;/label&gt;次,4星&lt;label&gt;BZMYD:4&lt;/label&gt;次,3星&lt;label&gt;BZMYD:3&lt;/label&gt;次,2星&lt;label&gt;BZMYD:2&lt;/label&gt;次,1星&lt;label&gt;BZMYD:1&lt;/label&gt;次&lt;/span&gt;&lt;/div&gt;
+    
+        &lt;div&gt;&lt;span&gt;送货满意度：5星:&lt;label&gt;SHMYD:5&lt;/label&gt;次,4星&lt;label&gt;SHMYD:4&lt;/label&gt;次,3星&lt;label&gt;SHMYD:3&lt;/label&gt;次,2星&lt;label&gt;SHMYD:2&lt;/label&gt;次,1星&lt;label&gt;SHMYD:1&lt;/label&gt;次&lt;/span&gt;&lt;/div&gt;
+    
+        &lt;div&gt;&lt;span&gt;配送满意度：5星:&lt;label&gt;PSMYD:5&lt;/label&gt;次,4星&lt;label&gt;PSMYD:4&lt;/label&gt;次,3星&lt;label&gt;PSMYD:3&lt;/label&gt;次,2星&lt;label&gt;PSMYD:2&lt;/label&gt;次,1星&lt;label&gt;PSMYD:1&lt;/label&gt;次&lt;/span&gt;&lt;/div&gt;
+    
+        &lt;div&gt;&lt;span&gt;服务满意度：5星:&lt;label&gt;FWMYD:5&lt;/label&gt;次,4星&lt;label&gt;FWMYD:4&lt;/label&gt;次,3星&lt;label&gt;FWMYD:3&lt;/label&gt;次,2星&lt;label&gt;FWMYD:2&lt;/label&gt;次,1星&lt;label&gt;FWMYD:1&lt;/label&gt;次&lt;/span&gt;&lt;/div&gt;
+    
+      &lt;/div&gt;
+    </LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelAddUser>1</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo />
+    <addroot />
+    <setroot />
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>
